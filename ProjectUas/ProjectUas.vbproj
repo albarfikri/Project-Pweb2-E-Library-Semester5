@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -25,6 +26,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>4.0</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -94,8 +96,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\buku.aspx" />
-    <Content Include="Admin\anggota.aspx" />
+    <Content Include="Admin\dashboard.aspx" />
+    <Content Include="Admin\maps.aspx" />
+    <Content Include="Admin\member.aspx" />
     <Content Include="Admin\petugas.aspx" />
+    <Content Include="Dashboard\contact.aspx" />
+    <Content Include="Dashboard\gallery.aspx" />
+    <Content Include="Dashboard\index.aspx" />
+    <Content Include="Dashboard\login.aspx" />
+    <Content Include="Dashboard\registrasi.aspx" />
     <Content Include="Scripts\bootstrap-material-design.min.js" />
     <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\popper.min.js" />
@@ -2633,6 +2642,216 @@
     <Content Include="Template\Admin\examples\upgrade.html" />
     <Content Include="Template\Admin\gulpfile.js" />
     <Content Include="Template\Admin\index.html" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\dist\sweetalert2.all.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\dist\sweetalert2.all.min.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\dist\sweetalert2.css" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\dist\sweetalert2.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\dist\sweetalert2.min.css" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\dist\sweetalert2.min.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\constants.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\globalState.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\instanceMethods.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\instanceMethods\buttons-handlers.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\instanceMethods\close.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\instanceMethods\enable-disable-elements.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\instanceMethods\getInput.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\instanceMethods\hideLoading.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\instanceMethods\keydown-handler.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\instanceMethods\popup-click-handler.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\instanceMethods\progress-steps.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\instanceMethods\show-reset-validation-error.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\instanceMethods\update.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\instanceMethods\_main.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\privateMethods.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\privateProps.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\staticMethods.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\staticMethods\argsToParams.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\staticMethods\dom.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\staticMethods\fire.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\staticMethods\mixin.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\staticMethods\queue.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\staticMethods\showLoading.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\staticMethods\timer.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\SweetAlert.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\sweetalert2.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\aria.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\classes.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\defaultInputValidators.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\DismissReason.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\animationEndEvent.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\domUtils.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\getters.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\index.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\init.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\inputUtils.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\measureScrollbar.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\parseHtmlToContainer.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\renderers\render.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\renderers\renderActions.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\renderers\renderCloseButton.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\renderers\renderContainer.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\renderers\renderContent.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\renderers\renderFooter.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\renderers\renderHeader.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\renderers\renderIcon.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\renderers\renderImage.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\renderers\renderInput.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\renderers\renderPopup.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\renderers\renderProgressSteps.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\dom\renderers\renderTitle.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\ieFix.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\iosFix.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\isNodeEnv.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\openPopup.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\params.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\scrollbarFix.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\setParameters.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\Timer.js" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\utils\utils.js" />
+    <Content Include="Template\Dashboard\assets\alert\sweetalert2.all.js" />
+    <Content Include="Template\Dashboard\assets\alert\sweetalert2.all.min.js" />
+    <Content Include="Template\Dashboard\assets\alert\sweetalert2.css" />
+    <Content Include="Template\Dashboard\assets\alert\sweetalert2.js" />
+    <Content Include="Template\Dashboard\assets\alert\sweetalert2.min.css" />
+    <Content Include="Template\Dashboard\assets\alert\sweetalert2.min.js" />
+    <Content Include="Template\Dashboard\assets\css\bootstrap-table.css" />
+    <Content Include="Template\Dashboard\assets\css\bootstrap-table_1.css" />
+    <Content Include="Template\Dashboard\assets\css\bootstrap-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\bootstrap-theme.min.css" />
+    <Content Include="Template\Dashboard\assets\css\bootstrap.css" />
+    <Content Include="Template\Dashboard\assets\css\bootstrap.min.css" />
+    <Content Include="Template\Dashboard\assets\css\bootstrap.min_1.css" />
+    <Content Include="Template\Dashboard\assets\css\bootstrap_1.css" />
+    <Content Include="Template\Dashboard\assets\css\datepicker.css" />
+    <Content Include="Template\Dashboard\assets\css\datepicker3.css" />
+    <Content Include="Template\Dashboard\assets\css\datepicker3_1.css" />
+    <Content Include="Template\Dashboard\assets\css\font-awesome.css" />
+    <Content Include="Template\Dashboard\assets\css\font-awesome_1.css" />
+    <Content Include="Template\Dashboard\assets\css\materialize.css" />
+    <Content Include="Template\Dashboard\assets\css\materialize.min.css" />
+    <Content Include="Template\Dashboard\assets\css\materialize_1.css" />
+    <Content Include="Template\Dashboard\assets\css\slick.css" />
+    <Content Include="Template\Dashboard\assets\css\slick_1.css" />
+    <Content Include="Template\Dashboard\assets\css\style.css" />
+    <Content Include="Template\Dashboard\assets\css\styles.css" />
+    <Content Include="Template\Dashboard\assets\css\styles_1.css" />
+    <Content Include="Template\Dashboard\assets\css\style_1.css" />
+    <Content Include="Template\Dashboard\assets\css\style_2.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color\burlywood-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color\dark-red-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color\default-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color\green-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color\orange-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color\pink-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color\purple-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color\red-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color\violet-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color\yellow-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color_1\burlywood-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color_1\dark-red-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color_1\default-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color_1\green-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color_1\orange-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color_1\pink-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color_1\purple-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color_1\red-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color_1\violet-theme.css" />
+    <Content Include="Template\Dashboard\assets\css\theme-color_1\yellow-theme.css" />
+    <Content Include="Template\Dashboard\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Template\Dashboard\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Template\Dashboard\assets\img\about-us.jpg" />
+    <Content Include="Template\Dashboard\assets\img\blog\blog-1.jpg" />
+    <Content Include="Template\Dashboard\assets\img\blog\blog-2.jpg" />
+    <Content Include="Template\Dashboard\assets\img\blog\blog-3.jpg" />
+    <Content Include="Template\Dashboard\assets\img\buku\a.jpeg" />
+    <Content Include="Template\Dashboard\assets\img\buku\algoritma.jpg" />
+    <Content Include="Template\Dashboard\assets\img\buku\attitude.jpg" />
+    <Content Include="Template\Dashboard\assets\img\buku\biologi.jpg" />
+    <Content Include="Template\Dashboard\assets\img\buku\conan.jpg" />
+    <Content Include="Template\Dashboard\assets\img\buku\kalkulus.jpg" />
+    <Content Include="Template\Dashboard\assets\img\buku\sbmptn.jpg" />
+    <Content Include="Template\Dashboard\assets\img\buku\sejarah.jpg" />
+    <Content Include="Template\Dashboard\assets\img\buku\toefl.jpg" />
+    <Content Include="Template\Dashboard\assets\img\buku\unexpected.jpg" />
+    <Content Include="Template\Dashboard\assets\img\counter-bg.jpg" />
+    <Content Include="Template\Dashboard\assets\img\courses\1.jpg" />
+    <Content Include="Template\Dashboard\assets\img\courses\2.jpg" />
+    <Content Include="Template\Dashboard\assets\img\courses\3.jpg" />
+    <Content Include="Template\Dashboard\assets\img\favicon.png" />
+    <Content Include="Template\Dashboard\assets\img\gallery\big\1.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\big\2.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\big\3.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\big\4.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\big\5.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\big\6.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\big\7.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\big\8.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\big\9.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\fancybox_buttons.png" />
+    <Content Include="Template\Dashboard\assets\img\gallery\fancybox_loading%402x.gif" />
+    <Content Include="Template\Dashboard\assets\img\gallery\fancybox_loading.gif" />
+    <Content Include="Template\Dashboard\assets\img\gallery\fancybox_overlay.png" />
+    <Content Include="Template\Dashboard\assets\img\gallery\fancybox_sprite%402x.png" />
+    <Content Include="Template\Dashboard\assets\img\gallery\fancybox_sprite.png" />
+    <Content Include="Template\Dashboard\assets\img\gallery\small\1.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\small\2.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\small\3.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\small\4.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\small\5.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\small\6.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\small\7.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\small\8.jpg" />
+    <Content Include="Template\Dashboard\assets\img\gallery\small\9.jpg" />
+    <Content Include="Template\Dashboard\assets\img\loader.gif" />
+    <Content Include="Template\Dashboard\assets\img\logo.png" />
+    <Content Include="Template\Dashboard\assets\img\slider\1.jpg" />
+    <Content Include="Template\Dashboard\assets\img\slider\2.jpg" />
+    <Content Include="Template\Dashboard\assets\img\slider\3.jpg" />
+    <Content Include="Template\Dashboard\assets\img\teachers\teacher-01.png" />
+    <Content Include="Template\Dashboard\assets\img\teachers\teacher-02.png" />
+    <Content Include="Template\Dashboard\assets\img\teachers\teacher-03.png" />
+    <Content Include="Template\Dashboard\assets\img\teachers\teacher-04.png" />
+    <Content Include="Template\Dashboard\assets\img\testimonial-1.png" />
+    <Content Include="Template\Dashboard\assets\img\testimonial-2.png" />
+    <Content Include="Template\Dashboard\assets\img\testimonial-3.png" />
+    <Content Include="Template\Dashboard\assets\img\testimonial-bg.jpg" />
+    <Content Include="Template\Dashboard\assets\js\bootstrap-datepicker.js" />
+    <Content Include="Template\Dashboard\assets\js\bootstrap-table.js" />
+    <Content Include="Template\Dashboard\assets\js\bootstrap.js" />
+    <Content Include="Template\Dashboard\assets\js\bootstrap.min.js" />
+    <Content Include="Template\Dashboard\assets\js\chart-data.js" />
+    <Content Include="Template\Dashboard\assets\js\chart.min.js" />
+    <Content Include="Template\Dashboard\assets\js\custom.js" />
+    <Content Include="Template\Dashboard\assets\js\easypiechart-data.js" />
+    <Content Include="Template\Dashboard\assets\js\easypiechart.js" />
+    <Content Include="Template\Dashboard\assets\js\html5shiv.min.js" />
+    <Content Include="Template\Dashboard\assets\js\jquery-1.11.1.min.js" />
+    <Content Include="Template\Dashboard\assets\js\jquery.counterup.js" />
+    <Content Include="Template\Dashboard\assets\js\jquery.min.js" />
+    <Content Include="Template\Dashboard\assets\js\lumino.glyphs.js" />
+    <Content Include="Template\Dashboard\assets\js\materialize.js" />
+    <Content Include="Template\Dashboard\assets\js\materialize.min.js" />
+    <Content Include="Template\Dashboard\assets\js\myjs.js" />
+    <Content Include="Template\Dashboard\assets\js\respond.min.js" />
+    <Content Include="Template\Dashboard\assets\js\slick.js" />
+    <Content Include="Template\Dashboard\assets\js\waypoints.js" />
+    <Content Include="Template\Dashboard\assets\video\profil.mp4" />
+    <Content Include="Template\Dashboard\contact.html" />
+    <Content Include="Template\Dashboard\crud_bahasa_buku\form_tambah.html" />
+    <Content Include="Template\Dashboard\error.html" />
+    <Content Include="Template\Dashboard\gallery.html" />
+    <Content Include="Template\Dashboard\gambar\logo_pcr.png" />
+    <Content Include="Template\Dashboard\index.html" />
+    <Content Include="Template\Dashboard\jenis_buku\form_tambah.html" />
+    <Content Include="Template\Dashboard\login.html" />
+    <Content Include="Template\Dashboard\loginaksi.html" />
+    <Content Include="Template\Dashboard\loginaksi2.html" />
+    <Content Include="Template\Dashboard\menu.html" />
+    <Content Include="Template\Dashboard\META-INF\context.xml" />
+    <Content Include="Template\Dashboard\OlahAddMember.html" />
+    <Content Include="Template\Dashboard\penerbit\form_tambah.html" />
+    <Content Include="Template\Dashboard\pengarang\form_tambah.html" />
+    <Content Include="Template\Dashboard\registrasi.html" />
     <Content Include="Template\TAdmin\assets\css\material-dashboard-rtl.css" />
     <Content Include="Template\TAdmin\assets\css\material-dashboard.css" />
     <Content Include="Template\TAdmin\assets\css\material-dashboard.min.css" />
@@ -2699,11 +2918,25 @@
       <DependentUpon>buku.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Admin\anggota.aspx.designer.vb">
-      <DependentUpon>anggota.aspx</DependentUpon>
+    <Compile Include="Admin\dashboard.aspx.designer.vb">
+      <DependentUpon>dashboard.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\anggota.aspx.vb">
-      <DependentUpon>anggota.aspx</DependentUpon>
+    <Compile Include="Admin\dashboard.aspx.vb">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\maps.aspx.designer.vb">
+      <DependentUpon>maps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\maps.aspx.vb">
+      <DependentUpon>maps.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\member.aspx.designer.vb">
+      <DependentUpon>member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\member.aspx.vb">
+      <DependentUpon>member.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Admin\petugas.aspx.designer.vb">
@@ -2719,6 +2952,48 @@
     <Compile Include="Admin.Master.vb">
       <DependentUpon>Admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Master.designer.vb">
+      <DependentUpon>Dashboard.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.Master.vb">
+      <DependentUpon>Dashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\contact.aspx.designer.vb">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\contact.aspx.vb">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\gallery.aspx.designer.vb">
+      <DependentUpon>gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\gallery.aspx.vb">
+      <DependentUpon>gallery.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\registrasi.aspx.designer.vb">
+      <DependentUpon>registrasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\registrasi.aspx.vb">
+      <DependentUpon>registrasi.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -2750,6 +3025,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.Master" />
+    <Content Include="Dashboard.Master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -3427,6 +3703,85 @@
     <Content Include="Template\TAdmin\LICENSE.md" />
     <Content Include="Template\TAdmin\package.json" />
     <Content Include="Template\TAdmin\README.md" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\CHANGELOG.md" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\LICENSE" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\package.json" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\README.md" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\scss\_animations.scss" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\scss\_body.scss" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\scss\_core.scss" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\scss\_mixins.scss" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\scss\_polyfills.scss" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\scss\_theming.scss" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\scss\_toasts-animations.scss" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\scss\_toasts-body.scss" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\scss\_toasts.scss" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\sweetalert2.scss" />
+    <Content Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\src\variables.scss" />
+    <Content Include="Template\Dashboard\assets\alert\package-lock.json" />
+    <Content Include="Template\Dashboard\assets\css\.DS_Store" />
+    <Content Include="Template\Dashboard\assets\css\bootstrap-theme.css.map" />
+    <Content Include="Template\Dashboard\assets\css\bootstrap.css.map" />
+    <Content Include="Template\Dashboard\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Template\Dashboard\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Template\Dashboard\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Template\Dashboard\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Template\Dashboard\assets\fonts\FontAwesome.otf" />
+    <Content Include="Template\Dashboard\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Template\Dashboard\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Template\Dashboard\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Template\Dashboard\assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Template\Dashboard\assets\img\bukufile\01_Tintin_in_the_Land_of_the_Soviets.pdf" />
+    <Content Include="Template\Dashboard\assets\img\bukufile\1.pdf" />
+    <Content Include="Template\Dashboard\assets\img\bukufile\15194_RINGKASAN BAHASA INGGRIS STAN.pdf" />
+    <Content Include="Template\Dashboard\assets\img\bukufile\Advanced_English_C_A_E_Grammar_Practice.pdf" />
+    <Content Include="Template\Dashboard\assets\img\bukufile\EssentialGrammarInUse.pdf" />
+    <Content Include="Template\Dashboard\assets\img\bukufile\Persona.pdf" />
+    <Content Include="Template\Dashboard\assets\img\bukufile\The.Good.Grammar.Book.pdf" />
+    <Content Include="Template\Dashboard\assets\js\.DS_Store" />
+    <Content Include="Template\Dashboard\assets\tables\data1.json" />
+    <Content Include="Template\Dashboard\assets\tables\data2.json" />
+    <Content Include="Template\Dashboard\buku\buku.jsp" />
+    <Content Include="Template\Dashboard\crud_bahasa_buku\bahasa_buku.jsp" />
+    <Content Include="Template\Dashboard\crud_bahasa_buku\edit.jsp" />
+    <Content Include="Template\Dashboard\crud_bahasa_buku\editaksi.jsp" />
+    <Content Include="Template\Dashboard\crud_bahasa_buku\hapus.jsp" />
+    <Content Include="Template\Dashboard\crud_bahasa_buku\insertbuku.jsp" />
+    <Content Include="Template\Dashboard\crud_bahasa_buku\tambah.jsp" />
+    <Content Include="Template\Dashboard\index\formEditBuku.jsp" />
+    <Content Include="Template\Dashboard\index\formEditPegawai.jsp" />
+    <Content Include="Template\Dashboard\index\forms.jsp" />
+    <Content Include="Template\Dashboard\index\icons.jsp" />
+    <Content Include="Template\Dashboard\index\indexlog.jsp" />
+    <Content Include="Template\Dashboard\index\OlahAddBuku.jsp" />
+    <Content Include="Template\Dashboard\index\OlahAddPegawai.jsp" />
+    <Content Include="Template\Dashboard\index\OlahHapusBuku.jsp" />
+    <Content Include="Template\Dashboard\index\OlahHapusPegawai.jsp" />
+    <Content Include="Template\Dashboard\index\OlahUpdateBuku.jsp" />
+    <Content Include="Template\Dashboard\index\OlahUpdatePegawai.jsp" />
+    <Content Include="Template\Dashboard\index\panels.jsp" />
+    <Content Include="Template\Dashboard\index\tables.jsp" />
+    <Content Include="Template\Dashboard\index\TambahBuku.jsp" />
+    <Content Include="Template\Dashboard\index\TambahPetugas.jsp" />
+    <Content Include="Template\Dashboard\index\widget.jsp" />
+    <Content Include="Template\Dashboard\jenis_buku\edit.jsp" />
+    <Content Include="Template\Dashboard\jenis_buku\editaksi.jsp" />
+    <Content Include="Template\Dashboard\jenis_buku\hapus.jsp" />
+    <Content Include="Template\Dashboard\jenis_buku\jenis_buku.jsp" />
+    <Content Include="Template\Dashboard\jenis_buku\tambah.jsp" />
+    <Content Include="Template\Dashboard\jenis_buku\tambahaksi.jsp" />
+    <Content Include="Template\Dashboard\penerbit\edit.jsp" />
+    <Content Include="Template\Dashboard\penerbit\editaksi.jsp" />
+    <Content Include="Template\Dashboard\penerbit\hapus.jsp" />
+    <Content Include="Template\Dashboard\penerbit\penerbit.jsp" />
+    <Content Include="Template\Dashboard\penerbit\tambah.jsp" />
+    <Content Include="Template\Dashboard\penerbit\tambahaksi.jsp" />
+    <Content Include="Template\Dashboard\pengarang\edit.jsp" />
+    <Content Include="Template\Dashboard\pengarang\editaksi.jsp" />
+    <Content Include="Template\Dashboard\pengarang\hapus.jsp" />
+    <Content Include="Template\Dashboard\pengarang\pengarang.jsp" />
+    <Content Include="Template\Dashboard\pengarang\tambah.jsp" />
+    <Content Include="Template\Dashboard\pengarang\tambahaksi.jsp" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3434,8 +3789,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Dashboard\" />
+    <TypeScriptCompile Include="Template\Dashboard\assets\alert\node_modules\sweetalert2\sweetalert2.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -3454,6 +3813,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>

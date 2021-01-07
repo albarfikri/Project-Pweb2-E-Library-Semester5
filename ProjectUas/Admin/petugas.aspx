@@ -9,26 +9,40 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title ">Tabel Buku</h4>
-                            <p class="card-category">Tersedia berbagai jenis buku disini</p>
+                            <h4 class="card-title ">Tabel Petugas</h4>
+                            <p class="card-category">Kelola petugas secara lebih detil disini</p>
                         </div>
                         <div class="card-body">
+                                 <div class="d-flex">
+                                <div class="col-md-3">
+                                    <div class="input-group no-border">
+                                        <input type="text" value="" class="form-control" placeholder="Cari Petugas...">
+                                        <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                            <i class="material-icons">search</i>
+                                            <div class="ripple-container"></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="ml-auto col-md-2">
+                                    <div class="align-content-end">
+                                        <button class="btn btn-primary btn-round">
+                                            <i class="material-icons">add</i> Tambah
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead class=" text-primary">
                                         <th>No
                                         </th>
-                                        <th>Judul Buku
+                                        <th>Nama Petugas
                                         </th>
                                         <th>Gambar
                                         </th>
-                                        <th>Jenis
+                                        <th>Alamat
                                         </th>
-                                        <th>Stok
-                                        </th>
-                                        <th>Tahun Terbit
-                                        </th>
-                                        <th>Nama Pengarang
+                                        <th>No. Hp
                                         </th>
                                         <th>Action
                                         </th>
@@ -37,51 +51,24 @@
                                         <tr>
                                             <td>1
                                             </td>
-                                            <td>Harry Potter
+                                            <td>M.Albar Fikri
                                             </td>
-                                            <td>Mason Porter
+                                            <td><img src="https://localhost:44308/Template/TAdmin/assets/img/new_logo.png" heigh="240" width="120"/>
                                             </td>
-                                            <td>Fiksi
                                             </td>
-                                            <td>12
+                                            <td>Jl. Bunga Asoka
                                             </td>
-                                            <td>2007
-                                            </td>
-                                            <td>Richard Antonio 
+                                            <td>0813376303562
                                             </td>
                                             <td>
-                                                <button class="btn btn-primary btn-fab btn-fab-mini btn-round">
+                                                <button class="btn btn-warning btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">edit</i>
                                                 </button>
                                                 <button class="btn btn-danger btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">delete</i>
                                                 </button>
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td>1
-                                            </td>
-                                            <td>Antara ada dan tiada
-                                            </td>
-                                            <td>Lala
-                                            </td>
-                                            <td>Novel
-                                            </td>
-                                            <td>12
-                                            </td>
-                                            <td>2007
-                                            </td>
-                                            <td>Terra Larras
-                                            </td>
-                                                <td>
-                                                <button class="btn btn-primary btn-fab btn-fab-mini btn-round">
-                                                    <i class="material-icons">edit</i>
-                                                </button>
-                                                <button class="btn btn-danger btn-fab btn-fab-mini btn-round">
-                                                    <i class="material-icons">delete</i>
-                                                </button>
-                                            </td>
-                                        </tr>
+                                        </tr>                                     
                                     </tbody>
                                 </table>
                             </div>

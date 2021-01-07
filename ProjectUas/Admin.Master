@@ -36,52 +36,34 @@
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li class="nav-item  ">
-                        <a class="nav-link" href="Template/TAdmin/examples/dashboard.html">
+                    <li id="dashboard" runat="server" class="nav-item  ">
+                        <a class="nav-link" href="https://localhost:44308/Admin/dashboard.aspx">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    <li class="nav-item ">
+                    <li id="staff" runat="server" class="nav-item ">
                         <a class="nav-link" href="https://localhost:44308/Admin/petugas.aspx">
                             <i class="material-icons">people</i>
                             <p>Petugas</p>
                         </a>
                     </li>
-                    <li class="nav-item active ">
+                    <li id="buku" runat="server" class="nav-item">
                         <a class="nav-link" href="https://localhost:44308/Admin/buku.aspx">
                             <i class="material-icons">content_paste</i>
                             <p>Koleksi Buku</p>
                         </a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="Template/TAdmin/examples/icons.html">
+                    <li id="member" runat="server" class="nav-item ">
+                        <a class="nav-link" href="https://localhost:44308/Admin/member.aspx">
                             <i class="material-icons">person</i>
-                            <p>Members</p>
+                            <p>Member</p>
                         </a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="Template/TAdmin/examples/map.html">
+                    <li id="maps" runat="server" class="nav-item ">
+                        <a class="nav-link" href="https://localhost:44308/Admin/maps.aspx">
                             <i class="material-icons">location_ons</i>
                             <p>Maps</p>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="Template/TAdmin/examples/notifications.html">
-                            <i class="material-icons">notifications</i>
-                            <p>Notifications</p>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="Template/TAdmin/examples/rtl.html">
-                            <i class="material-icons">language</i>
-                            <p>RTL Support</p>
-                        </a>
-                    </li>
-                    <li class="nav-item active-pro ">
-                        <a class="nav-link" href="Template/TAdmin/examples/upgrade.html">
-                            <i class="material-icons">unarchive</i>
-                            <p>Upgrade to PRO</p>
                         </a>
                     </li>
                 </ul>
@@ -92,7 +74,7 @@
             <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
-                        <a class="navbar-brand" href="javascript:;">E-Library Management
+                        <a class="navbar-brand" href="javascript:;">Admin E-Library Management 
                         </a>
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -150,7 +132,7 @@
                                     <a class="dropdown-item" href="#">Profile</a>
                                     <a class="dropdown-item" href="#">Settings</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Log out</a>
+                                    <a class="dropdown-item" href="../Dashboard/index.aspx">Log out</a>
                                 </div>
                             </li>
                         </ul>
@@ -165,7 +147,7 @@
                     <nav class="float-left">
                         <ul>
                             <li>
-                                <a href="https://www.creative-tim.com">Creative Tim
+                                <a href="https://www.creative-tim.com">Albar
                 </a>
                             </li>
                             <li>
@@ -176,10 +158,7 @@
                                 <a href="http://blog.creative-tim.com">Blog
                 </a>
                             </li>
-                            <li>
-                                <a href="https://www.creative-tim.com/license">Licenses
-                </a>
-                            </li>
+
                         </ul>
                     </nav>
                     <div class="copyright float-right">
@@ -188,10 +167,10 @@
                         <script>
                             document.write(new Date().getFullYear())
             </script>
-                        , made with <i class="material-icons">favorite</i> by
+                        Powered by
            
-                        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
-         
+                        <a href="https://www.creative-tim.com" target="_blank">Albar</a>
+
                     </div>
                 </div>
             </footer>

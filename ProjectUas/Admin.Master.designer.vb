@@ -23,6 +23,51 @@ Partial Public Class library
     Protected WithEvents head As Global.System.Web.UI.WebControls.ContentPlaceHolder
 
     '''<summary>
+    '''dashboard control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents dashboard As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''staff control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents staff As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''buku control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents buku As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''member control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents member As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''maps control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents maps As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
     '''Content control.
     '''</summary>
     '''<remarks>

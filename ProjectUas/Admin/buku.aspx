@@ -15,8 +15,29 @@
                             <p class="card-category">Tersedia berbagai jenis buku disini</p>
                         </div>
                         <div class="card-body">
+                            <div class="d-flex">
+                                <div class="col-md-3">
+                                    <div class="input-group no-border">
+                                        <input type="text" value="" class="form-control" placeholder="Cari Buku...">
+                                        <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                                            <i class="material-icons">search</i>
+                                            <div class="ripple-container"></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="ml-auto col-md-2">
+                                    <div class="align-content-end">
+                                        <button class="btn btn-primary btn-round">
+                                            <i class="material-icons">add</i> Tambah
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="table-responsive">
+
                                 <table class="table">
+
                                     <thead class=" text-primary">
                                         <th>No
                                         </th>
@@ -41,7 +62,8 @@
                                             </td>
                                             <td>Harry Potter
                                             </td>
-                                            <td>Mason Porter
+                                            <td><img src="https://localhost:44308/Template/TAdmin/assets/img/faces/marc.jpg" height="180" width="140"/>
+
                                             </td>
                                             <td>Fiksi
                                             </td>
@@ -52,7 +74,7 @@
                                             <td>Richard Antonio 
                                             </td>
                                             <td>
-                                                <button class="btn btn-primary btn-fab btn-fab-mini btn-round">
+                                                <button class="btn btn-warning  btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">edit</i>
                                                 </button>
                                                 <button class="btn btn-danger btn-fab btn-fab-mini btn-round">
@@ -65,7 +87,7 @@
                                             </td>
                                             <td>Antara ada dan tiada
                                             </td>
-                                            <td>Lala
+                                            <td> <img src="../Template/TAdmin/assets/img/faces/avatar.jpg" height="180" width="140"/>
                                             </td>
                                             <td>Novel
                                             </td>
@@ -75,8 +97,8 @@
                                             </td>
                                             <td>Terra Larras
                                             </td>
-                                                <td>
-                                                <button class="btn btn-primary btn-fab btn-fab-mini btn-round">
+                                            <td>
+                                                <button class="btn btn-warning  btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">edit</i>
                                                 </button>
                                                 <button class="btn btn-danger btn-fab btn-fab-mini btn-round">
