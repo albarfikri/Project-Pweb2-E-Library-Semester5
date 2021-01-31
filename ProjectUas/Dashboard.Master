@@ -146,7 +146,7 @@
                         </button>
                         <!-- LOGO -->
                         <!-- TEXT BASED LOGO -->
-                        <a class="navbar-brand" href="index.jsp"><i class="fa fa-university"></i><span>Priceless Library</span></a>
+                        <a class="navbar-brand" href="index.jsp"><i class="fa fa-university"></i><span>E-Library</span></a>
                         <!-- IMG BASED LOGO  -->
                         <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
                     </div>
@@ -173,7 +173,7 @@
             <div class="mu-footer-bottom">
                 <div class="container">
                     <div class="mu-footer-bottom-area">
-                        <p>&copy; Priceless Online Library</p>
+                        <p>&copy; E-Library</p>
                     </div>
                 </div>
             </div>

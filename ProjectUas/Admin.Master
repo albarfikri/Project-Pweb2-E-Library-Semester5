@@ -23,6 +23,7 @@
 
 </head>
 <body>
+
     <div class="wrapper ">
         <div class="sidebar" data-color="purple" data-background-color="white" data-image="https://localhost:44308/Template/TAdmin/assets/img/sidebar-1.jpg">
             <!--

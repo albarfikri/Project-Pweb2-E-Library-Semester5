@@ -1,214 +1,163 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="registrasi.aspx.vb" Inherits="ProjectUas.Sign_Up" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="registrasi.aspx.vb" Inherits="ProjectUas.registrasi" %>
 
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta charset="utf-8">
- 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
-    <meta name="author" content="Creative Tim">
-    <title>Argon Dashboard - Free Dashboard for Bootstrap 4</title>
-    <!-- Favicon -->
-    <link rel="icon" href="https://localhost:44308/Template/Admin/assets/img/brand/favicon.png" type="image/png">
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://localhost:44308/Template/Admin/assets/vendor/nucleo/css/nucleo.css" type="text/css">
-    <link rel="stylesheet" href="https://localhost:44308/Template/Admin/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
-    <!-- Argon CSS -->
-    <link rel="stylesheet" href="https://localhost:44308/Template/Admin/assets/css/argon.css?v=1.2.0" type="text/css">
+<html lang="en">
+<head>
+    <title>Registrasi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="https://localhost:44308/Template/Login/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://localhost:44308/Template/Login/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://localhost:44308/Template/Login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://localhost:44308/Template/Login/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://localhost:44308/Template/Login/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://localhost:44308/Template/Login/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://localhost:44308/Template/Login/css/util.css">
+    <link rel="stylesheet" type="text/css" href="https://localhost:44308/Template/Login/css/main.css">
+    <!--===============================================================================================-->
 </head>
-<body class="bg-default">
-    <form id="form1" runat="server">
-        <!-- Navbar -->
-        <nav id="navbar-main" class="navbar navbar-horizontal navbar-transparent navbar-main navbar-expand-lg navbar-light">
-            <div class="container">
-                
-               
-                <div class="navbar-collapse navbar-custom-collapse collapse" id="navbar-collapse">
-                    <div class="navbar-collapse-header">
-                        <div class="row">
-                            <div class="col-6 collapse-brand">
-                                <a href="dashboard.html">
-                                    <img src="https://localhost:44308/Template/Admin/assets/img/brand/blue.png">
-                                </a>
+<body>
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+
+                <div class="login100-pic js-tilt" data-tilt>
+                    <img src="https://localhost:44308/Template/Login/images/img-01.png" alt="IMG">
+                </div>
+
+
+                <form class="login100-form validate-form" runat="server">
+                    <span class="login100-form-title">Registration Form
+                    </span>
+                    <div class="col-sm-16">
+                        <div class="wrap-input100 validate-input" data-validate="Nama is required !">
+                            <asp:TextBox runat="server" class="input100" type="text" name="nama" ID="nama" placeholder="Nama"></asp:TextBox>
+                            <span class="focus-input100"></span>
+                            <span class="symbol-input100">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Nik is required !">
+                        <asp:TextBox runat="server" class="input100" type="number" name="nik" ID="nik" placeholder="Nik"></asp:TextBox>
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-chain" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Alamat is required !">
+                        <asp:TextBox runat="server" class="input100" type="text" name="alamat" ID="alamat" placeholder="Alamat"></asp:TextBox>
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-address-card-o " aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="wrap-input100 validate-input" data-validate="DOB is required !">
+                                <asp:TextBox runat="server" class="input100" type="date" name="ttl" ID="ttl" placeholder="TTL"></asp:TextBox>
+                                <span class="focus-input100"></span>
+                                <span class="symbol-input100">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                </span>
                             </div>
-                            <div class="col-6 collapse-close">
-                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span></span>
-                                    <span></span>
-                                </button>
+                        </div>
+
+
+                        <div class="col-sm-8">
+                            <div class="wrap-input100 validate-input" data-validate="Gender is required ">
+                                <asp:DropDownList runat="server" class="input100" type="text" name="jenis_kelamin" ID="jenis_kelamin" placeholder="Jenis kelamin">
+                                    <asp:ListItem>Pria</asp:ListItem>
+                                    <asp:ListItem>Wanita</asp:ListItem>
+                                </asp:DropDownList>
+                                <span class="focus-input100"></span>
+                                <span class="symbol-input100">
+                                    <i class="fa fa-venus-mars" aria-hidden="true"></i>
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a href="login.aspx" class="nav-link">
-                                <span class="nav-link-inner--text">Login</span>
-                            </a>
-                        </li>
-                      
-                    </ul>
-                    <hr class="d-lg-none" />
-                    <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" data-toggle="tooltip" data-original-title="Like us on Facebook">
-                                <i class="fab fa-facebook-square"></i>
-                                <span class="nav-link-inner--text d-lg-none">Facebook</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-icon" href="https://www.instagram.com/creativetimofficial" target="_blank" data-toggle="tooltip" data-original-title="Follow us on Instagram">
-                                <i class="fab fa-instagram"></i>
-                                <span class="nav-link-inner--text d-lg-none">Instagram</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-icon" href="https://twitter.com/creativetim" target="_blank" data-toggle="tooltip" data-original-title="Follow us on Twitter">
-                                <i class="fab fa-twitter-square"></i>
-                                <span class="nav-link-inner--text d-lg-none">Twitter</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-icon" href="https://github.com/creativetimofficial" target="_blank" data-toggle="tooltip" data-original-title="Star us on Github">
-                                <i class="fab fa-github"></i>
-                                <span class="nav-link-inner--text d-lg-none">Github</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Main content -->
-        <div class="main-content">
-            <!-- Header -->
-            <div class="header bg-gradient-primary py-7 py-lg-8 pt-lg-9">
-                <div class="container">
-                    <div class="header-body text-center mb-7">
-                        <div class="row justify-content-center">
-                            <div class="col-xl-5 col-lg-6 col-md-8 px-5">
-                                <h1 class="text-white">Create an account</h1>
-                                <p class="text-lead text-white">Buat akun disini.</p>
-                            </div>
-                        </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <asp:TextBox runat="server" class="input100" type="text" name="email" ID="email" placeholder="Email"></asp:TextBox>
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
                     </div>
-                </div>
-                <div class="separator separator-bottom separator-skew zindex-100">
-                    <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
-                    </svg>
-                </div>
-            </div>
-            <!-- Page content -->
-            <div class="container mt--8 pb-5">
-                <!-- Table -->
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 col-md-8">
-                        <div class="card bg-secondary border-0">
-                            <div class="card-header bg-transparent pb-5">
-                                <div class="text-muted text-center mt-2 mb-4"><small>Sign up with</small></div>
-                                <div class="text-center">
-                                    <a href="#" class="btn btn-neutral btn-icon mr-4">
-                                        <span class="btn-inner--icon">
-                                            <img src="https://localhost:44308/Template/Admin/assets/img/icons/common/github.svg"></span>
-                                        <span class="btn-inner--text">Github</span>
-                                    </a>
-                                    <a href="#" class="btn btn-neutral btn-icon">
-                                        <span class="btn-inner--icon">
-                                            <img src="https://localhost:44308/Template/Admin/assets/img/icons/common/google.svg"></span>
-                                        <span class="btn-inner--text">Google</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-body px-lg-5 py-lg-5">
-                                <div class="text-center text-muted mb-4">
-                                    <small>Or sign up with credentials</small>
-                                </div>
-                                <form role="form">
-                                    <div class="form-group">
-                                        <div class="input-group input-group-merge input-group-alternative mb-3">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
-                                            </div>
-                                            <input class="form-control" placeholder="Name" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group input-group-merge input-group-alternative mb-3">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                            </div>
-                                            <input class="form-control" placeholder="Email" type="email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group input-group-merge input-group-alternative">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-                                            </div>
-                                            <input class="form-control" placeholder="Password" type="password">
-                                        </div>
-                                    </div>
-                                    <div class="text-muted font-italic"><small>password strength: <span class="text-success font-weight-700">strong</span></small></div>
-                                    <div class="row my-4">
-                                        <div class="col-12">
-                                            <div class="custom-control custom-control-alternative custom-checkbox">
-                                                <input class="custom-control-input" id="customCheckRegister" type="checkbox">
-                                                <label class="custom-control-label" for="customCheckRegister">
-                                                    <span class="text-muted">I agree with the <a href="#!">Privacy Policy</a></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-center">
-                                        <button type="button" class="btn btn-primary mt-4">Create account</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Phone Number is required !">
+                        <asp:TextBox runat="server" class="input100" type="number" name="no_hp" ID="no_hp" placeholder="No. Hp"></asp:TextBox>
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                        </span>
                     </div>
-                </div>
+                    <div class="wrap-input100 validate-input" data-validate="Username is required !">
+                        <asp:TextBox runat="server" class="input100" type="text" name="username" ID="username" placeholder="Username"></asp:TextBox>
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Password is required !">
+                        <asp:TextBox runat="server" class="input100" type="text" name="password" ID="password" placeholder="Password"></asp:TextBox>
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="container-login100-form-btn">
+                        <asp:Button class="login100-form-btn" runat="server" Text="Login" ID="ButtonUpdate"></asp:Button>
+                    </div>
+
+                    <div class="text-center p-t-12">
+                        <span class="txt1">Forgot
+                        </span>
+                        <a class="txt2" href="#">Username / Password?
+                        </a>
+                    </div>
+
+                    <div class="text-center p-t-136">
+                        <i class="fa fa-long-arrow-left m-l-5" aria-hidden="true"></i>
+                        <a class="txt2" href="login.aspx">Have an account
+							
+                        </a>
+                    </div>
+                </form>
             </div>
         </div>
-        <!-- Footer -->
-        <footer class="py-5" id="footer-main">
-            <div class="container">
-                <div class="row align-items-center justify-content-xl-between">
-                    <div class="col-xl-6">
-                        <div class="copyright text-center text-xl-left text-muted">
-                            &copy; 2020 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Albar's Library</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <ul class="nav nav-footer justify-content-center justify-content-xl-end">
-                            <li class="nav-item">
-                                <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </form>
-    <!-- Argon Scripts -->
-    <!-- Core -->
-    <script src="https://localhost:44308/Template/Admin/assets/vendor/jquery/dist/jquery.min.js"></script>
-    <script src="https://localhost:44308/Template/Admin/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://localhost:44308/Template/Admin/assets/vendor/js-cookie/js.cookie.js"></script>
-    <script src="https://localhost:44308/Template/Admin/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
-    <script src="https://localhost:44308/Template/Admin/assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
-    <!-- Argon JS -->
-    <script src="https://localhost:44308/Template/Admin/assets/js/argon.js?v=1.2.0"></script>
+    </div>
+
+
+
+
+    <!--===============================================================================================-->
+    <script src="https://localhost:44308/Template/Login/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://localhost:44308/Template/Login/vendor/bootstrap/js/popper.js"></script>
+    <script src="https://localhost:44308/Template/Login/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://localhost:44308/Template/Login/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://localhost:44308/Template/Login/vendor/tilt/tilt.jquery.min.js"></script>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+    <!--===============================================================================================-->
+    <script src="https://localhost:44308/Template/Login/js/main.js"></script>
+
 </body>
 </html>

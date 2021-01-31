@@ -27,9 +27,12 @@
                                 </div>
                                 <div class="ml-auto col-md-2">
                                     <div class="align-content-end">
-                                        <button class="btn btn-primary btn-round">
-                                            <i class="material-icons">add</i> Tambah
-                                        </button>
+                                        <a href="bukutambah.aspx">
+                                            <button class="btn btn-primary btn-round">
+
+                                                <i class="material-icons">add</i> Tambah
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +65,8 @@
                                             </td>
                                             <td>Harry Potter
                                             </td>
-                                            <td><img src="https://localhost:44308/Template/TAdmin/assets/img/faces/marc.jpg" height="180" width="140"/>
+                                            <td>
+                                                <img src="https://localhost:44308/Template/TAdmin/assets/img/faces/marc.jpg" height="180" width="140" />
 
                                             </td>
                                             <td>Fiksi
@@ -87,7 +91,8 @@
                                             </td>
                                             <td>Antara ada dan tiada
                                             </td>
-                                            <td> <img src="../Template/TAdmin/assets/img/faces/avatar.jpg" height="180" width="140"/>
+                                            <td>
+                                                <img src="../Template/TAdmin/assets/img/faces/avatar.jpg" height="180" width="140" />
                                             </td>
                                             <td>Novel
                                             </td>

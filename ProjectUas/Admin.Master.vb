@@ -5,6 +5,10 @@
         Dim activepage = Request.RawUrl
         If (activepage.Contains("Admin/buku.aspx")) Then
             buku.Attributes.Add("class", "nav-item active")
+        ElseIf (activepage.Contains("Admin/bukutambah.aspx")) Then
+            buku.Attributes.Add("class", "nav-item active")
+        ElseIf (activepage.Contains("Admin/bukuedit.aspx")) Then
+            staff.Attributes.Add("class", "nav-item active")
         ElseIf (activepage.Contains("Admin/petugas.aspx")) Then
             staff.Attributes.Add("class", "nav-item active")
         ElseIf (activepage.Contains("Admin/member.aspx")) Then
