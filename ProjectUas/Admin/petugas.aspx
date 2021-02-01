@@ -3,20 +3,20 @@
     Petugas
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-      <div class="content">
+    <div class="content">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title ">Tabel Petugas</h4>
-                            <p class="card-category">Kelola petugas secara lebih detil disini</p>
+                            <h4 class="card-title ">Tabel Member</h4>
+                            <p class="card-category">Kelola Member secara lebih detil disini</p>
                         </div>
                         <div class="card-body">
-                                 <div class="d-flex">
+                            <div class="d-flex">
                                 <div class="col-md-3">
                                     <div class="input-group no-border">
-                                        <input type="text" value="" class="form-control" placeholder="Cari Petugas...">
+                                        <input type="text" value="" class="form-control" placeholder="Cari Member...">
                                         <button type="submit" class="btn btn-white btn-round btn-just-icon">
                                             <i class="material-icons">search</i>
                                             <div class="ripple-container"></div>
@@ -25,57 +25,100 @@
                                 </div>
                                 <div class="ml-auto col-md-2">
                                     <div class="align-content-end">
-                                        <button class="btn btn-primary btn-round">
-                                            <i class="material-icons">add</i> Tambah
-                                        </button>
+                                        <asp:LinkButton runat="server" class="btn btn-primary btn-round" PostBackUrl="~/Admin/petugastambah.aspx"> <i  class="material-icons">add</i> Tambah </asp:LinkButton>
                                     </div>
                                 </div>
                             </div>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead class=" text-primary">
-                                        <th>No
-                                        </th>
-                                        <th>Nama Petugas
-                                        </th>
-                                        <th>Gambar
-                                        </th>
-                                        <th>Alamat
-                                        </th>
-                                        <th>No. Hp
-                                        </th>
-                                        <th>Action
-                                        </th>
-                                    </thead>
+                            
+                            <asp:Repeater ID="RepeaterPetugas" runat="server" OnItemCommand="Petugas_Command">
+                                <HeaderTemplate>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead class=" text-primary">
+                                                <th>No
+                                                </th>
+                                                <th>Nama
+                                                </th>
+                                                <th>Gambar
+                                                </th>
+                                                <th>Nik
+                                                </th>
+                                                <th>Alamat
+                                                </th>
+                                                <th>Ttl
+                                                </th>
+                                                <th>Jenis Kelamin
+                                                </th>
+                                                <th>Email
+                                                </th>
+                                                <th>Telp
+                                                </th>
+                                                <th>Kategori
+                                                </th>
+                                                <th>Action
+                                                </th>
+                                      
+                                            </thead>
+                                </HeaderTemplate>
+                                <ItemTemplate>
                                     <tbody>
+
                                         <tr>
-                                            <td>1
-                                            </td>
-                                            <td>M.Albar Fikri
-                                            </td>
-                                            <td><img src="https://localhost:44308/Template/TAdmin/assets/img/new_logo.png" heigh="240" width="120"/>
-                                            </td>
-                                            </td>
-                                            <td>Jl. Bunga Asoka
-                                            </td>
-                                            <td>0813376303562
+                                            <td>
+                                                <%# Container.ItemIndex + 1 %>
                                             </td>
                                             <td>
-                                                <button class="btn btn-warning btn-fab btn-fab-mini btn-round">
-                                                    <i class="material-icons">edit</i>
-                                                </button>
-                                                <button class="btn btn-danger btn-fab btn-fab-mini btn-round">
-                                                    <i class="material-icons">delete</i>
-                                                </button>
+                                                <%# Eval("nama") %>
                                             </td>
-                                        </tr>                                     
+                                            <td>
+                                                <img src="../Assets/Img/<%# Eval("gambar") %>" height="180" width="140"  />
+                                            </td>
+                                            <td>
+                                                <%# Eval("nik") %>
+                                            </td>
+
+                                            <td>
+                                                <%# Eval("alamat") %>
+                                            </td>
+                                            <td>
+                                                <%# Eval("ttl") %>
+                                            </td>
+                                            <td>
+                                                <%# Eval("jenis_kelamin") %>
+                                            </td>
+                                            <td>
+                                                <%# Eval("email") %>
+                                            </td>
+                                            <td>
+                                                <%# Eval("nama") %>
+                                            </td>
+                                            <td>
+                                                <%# Eval("no_hp") %>
+                                            </td>
+                                            <td>
+                                                <asp:LinkButton ID="edit" runat="server" class="btn btn-warning btn-fab btn-fab-mini btn-round">
+                                                    <i class="material-icons">edit</i>
+                                               </asp:LinkButton>
+                                      
+                                                 <asp:LinkButton ID="delete" runat="server" CommandArgument='<%# Eval("id") %>' CommandName="delete" onclientclick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-fab btn-fab-mini btn-round">
+                                                    <i class="material-icons">delete</i>
+                                                </asp:LinkButton>
+                                            </td>
+                                        </tr>
+
                                     </tbody>
-                                </table>
-                            </div>
+                                </ItemTemplate>
+                                <FooterTemplate>
+                                    </table>
+                                </FooterTemplate>
+                            </asp:Repeater>
+                   
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+
 </asp:Content>

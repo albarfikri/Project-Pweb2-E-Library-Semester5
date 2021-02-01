@@ -37,6 +37,105 @@ ProjectUas
  Returns the Asp log object.
  </summary>
 </member>
+<member name="F:ProjectUas.petugastambah._nama">
+<summary>
+nama control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.petugastambah._nik">
+<summary>
+nik control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.petugastambah._ttl">
+<summary>
+ttl control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.petugastambah._jenis_kelamin">
+<summary>
+jenis_kelamin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.petugastambah._alamat">
+<summary>
+alamat control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.petugastambah._gambar">
+<summary>
+gambar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.petugastambah._email">
+<summary>
+email control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.petugastambah._no_hp">
+<summary>
+no_hp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.petugastambah._username">
+<summary>
+username control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.petugastambah._password">
+<summary>
+password control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.petugastambah._tambahpetugas">
+<summary>
+tambahpetugas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:ProjectUas.login._username">
 <summary>
 username control.
@@ -103,6 +202,24 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:ProjectUas.maps._maps">
 <summary>
 maps control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.Petugas._RepeaterMember">
+<summary>
+RepeaterMember control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.petugas1._RepeaterPetugas">
+<summary>
+RepeaterPetugas control.
 </summary>
 <remarks>
 Auto-generated field.
@@ -337,6 +454,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:ProjectUas.WebForm1._form1">
 <summary>
 form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.WebForm1._LinkButton1">
+<summary>
+LinkButton1 control.
 </summary>
 <remarks>
 Auto-generated field.

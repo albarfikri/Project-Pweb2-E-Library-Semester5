@@ -16,6 +16,7 @@ Public Class login
             da.Fill(ds)
 
         If ds.Tables(0).Rows.Count > 0 Then
+
             MsgBox("Authentication Successfully.", MsgBoxStyle.Information)
             Response.Redirect("~/Admin/dashboard.aspx")
         Else

@@ -99,6 +99,27 @@
     <Content Include="Admin\bukuedit.aspx" />
     <Content Include="Admin\bukutambah.aspx" />
     <Content Include="Admin\dashboard.aspx" />
+    <Content Include="Admin\memberedit.aspx" />
+    <Content Include="Admin\membertambah.aspx" />
+    <Content Include="Admin\petugasedit.aspx" />
+    <Content Include="Admin\petugastambah.aspx" />
+    <Content Include="Assets\Img\1.jpg" />
+    <Content Include="Assets\Img\2.jpg" />
+    <Content Include="Assets\Img\3.jpg" />
+    <Content Include="Assets\Img\4.jpg" />
+    <Content Include="Assets\Img\5.jpg" />
+    <Content Include="Assets\Img\6.jpg" />
+    <Content Include="Assets\Img\7.jpg" />
+    <Content Include="Assets\Img\a.jpeg" />
+    <Content Include="Assets\Img\algoritma.jpg" />
+    <Content Include="Assets\Img\attitude.jpg" />
+    <Content Include="Assets\Img\biologi.jpg" />
+    <Content Include="Assets\Img\conan.jpg" />
+    <Content Include="Assets\Img\kalkulus.jpg" />
+    <Content Include="Assets\Img\sbmptn.jpg" />
+    <Content Include="Assets\Img\sejarah.jpg" />
+    <Content Include="Assets\Img\toefl.jpg" />
+    <Content Include="Assets\Img\unexpected.jpg" />
     <Content Include="Dashboard\login.aspx" />
     <Content Include="Admin\maps.aspx" />
     <Content Include="Admin\member.aspx" />
@@ -337,6 +358,8 @@
     <Content Include="Template\Login\fonts\montserrat\OFL.txt" />
     <Content Include="Template\Login\images\icons\favicon.ico" />
     <Content Include="Template\Login\images\img-01.png" />
+    <Content Include="Template\Login\images\logo2.png" />
+    <Content Include="Template\Login\images\orang.png" />
     <Content Include="Template\Login\index.html" />
     <Content Include="Template\Login\js\main.js" />
     <Content Include="Template\Login\vendor\animate\animate.css" />
@@ -447,6 +470,34 @@
       <DependentUpon>dashboard.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Admin\memberedit.aspx.designer.vb">
+      <DependentUpon>memberedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\memberedit.aspx.vb">
+      <DependentUpon>memberedit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\membertambah.aspx.designer.vb">
+      <DependentUpon>membertambah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\membertambah.aspx.vb">
+      <DependentUpon>membertambah.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\petugasedit.aspx.designer.vb">
+      <DependentUpon>petugasedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\petugasedit.aspx.vb">
+      <DependentUpon>petugasedit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\petugastambah.aspx.designer.vb">
+      <DependentUpon>petugastambah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\petugastambah.aspx.vb">
+      <DependentUpon>petugastambah.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Dashboard\login.aspx.designer.vb">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
@@ -555,6 +606,19 @@
   <ItemGroup>
     <Content Include="Admin.Master" />
     <Content Include="Dashboard.Master" />
+    <Content Include="Assets\pdf\1.pdf" />
+    <Content Include="Assets\pdf\2.pdf" />
+    <Content Include="Assets\pdf\3.pdf" />
+    <Content Include="Assets\pdf\4.pdf" />
+    <Content Include="Assets\pdf\5.pdf" />
+    <Content Include="Assets\pdf\6.pdf" />
+    <Content Include="Assets\pdf\7.pdf" />
+    <Content Include="Assets\pdf\01_Tintin_in_the_Land_of_the_Soviets.pdf" />
+    <Content Include="Assets\pdf\15194_RINGKASAN BAHASA INGGRIS STAN.pdf" />
+    <Content Include="Assets\pdf\Advanced_English_C_A_E_Grammar_Practice.pdf" />
+    <Content Include="Assets\pdf\EssentialGrammarInUse.pdf" />
+    <Content Include="Assets\pdf\Persona.pdf" />
+    <Content Include="Assets\pdf\The.Good.Grammar.Book.pdf" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

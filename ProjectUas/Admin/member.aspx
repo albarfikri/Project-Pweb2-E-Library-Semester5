@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Admin.Master" CodeBehind="member.aspx.vb" Inherits="ProjectUas.Petugas" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    Anggota
-</asp:Content>
+    Anggota</asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="content">
@@ -27,58 +26,102 @@
                                 </div>
                                 <div class="ml-auto col-md-2">
                                     <div class="align-content-end">
-                                        <button class="btn btn-primary btn-round">
-                                            <i class="material-icons">add</i> Tambah
-                                        </button>
+                                        <asp:LinkButton runat="server" class="btn btn-primary btn-round" PostBackUrl="~/Admin/membertambah.aspx">
+                                            <i  class="material-icons">add</i> Tambah
+                                        </asp:LinkButton>
                                     </div>
                                 </div>
                             </div>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead class=" text-primary">
-                                        <th>No
-                                        </th>
-                                        <th>Nama Petugas
-                                        </th>
-                                        <th>Gambar
-                                        </th>
-                                        <th>Alamat
-                                        </th>
-                                        <th>No. Hp
-                                        </th>
-                                        <th>Action
-                                        </th>
-                                    </thead>
+                            
+                            <asp:Repeater ID="RepeaterMember" runat="server" OnItemCommand="Member_Command">
+                                <HeaderTemplate>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead class=" text-primary">
+                                                <th>No
+                                                </th>
+                                                <th>Nama
+                                                </th>
+                                                <th>Gambar
+                                                </th>
+                                                <th>Nik
+                                                </th>
+                                                <th>Alamat
+                                                </th>
+                                                <th>Ttl
+                                                </th>
+                                                <th>Jenis Kelamin
+                                                </th>
+                                                <th>Email
+                                                </th>
+                                                <th>Telp
+                                                </th>
+                                                <th>Kategori
+                                                </th>
+                                                <th>Action
+                                                </th>
+                                      
+                                            </thead>
+                                </HeaderTemplate>
+                                <ItemTemplate>
                                     <tbody>
+
                                         <tr>
-                                            <td>1
-                                            </td>
-                                            <td>M.Albar Fikri
+                                            <td>
+                                                <%# Container.ItemIndex + 1 %>
                                             </td>
                                             <td>
-                                                <img src="../Template/TAdmin/assets/img/faces/card-profile1-square.jpg" height="180" width="140"/>
-                                            </td>
-                                            <td>Jl. Bunga Asoka
-                                            </td>
-                                            <td>0813376303562
+                                                <%# Eval("nama") %>
                                             </td>
                                             <td>
-                                                <button class="btn btn-warning btn-fab btn-fab-mini btn-round">
+                                                <img src="../Template/TAdmin/assets/img/faces/card-profile1-square.jpg" height="180" width="140" />
+                                            </td>
+                                            <td>
+                                                <%# Eval("nik") %>
+                                            </td>
+
+                                            <td>
+                                                <%# Eval("alamat") %>
+                                            </td>
+                                            <td>
+                                                <%# Eval("ttl") %>
+                                            </td>
+                                            <td>
+                                                <%# Eval("jenis_kelamin") %>
+                                            </td>
+                                            <td>
+                                                <%# Eval("email") %>
+                                            </td>
+                                            <td>
+                                                <%# Eval("nama") %>
+                                            </td>
+                                            <td>
+                                                <%# Eval("no_hp") %>
+                                            </td>
+                                            <td>
+                                                <asp:LinkButton ID="edit" runat="server" class="btn btn-warning btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">edit</i>
-                                                </button>
-                                                <button class="btn btn-danger btn-fab btn-fab-mini btn-round">
+                                               </asp:LinkButton>
+                                      
+                                                 <asp:LinkButton ID="delete" runat="server" CommandArgument='<%# Eval("id") %>' CommandName="delete" onclientclick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">delete</i>
-                                                </button>
+                                                </asp:LinkButton>
                                             </td>
                                         </tr>
+
                                     </tbody>
-                                </table>
-                            </div>
+                                </ItemTemplate>
+                                <FooterTemplate>
+                                    </table>
+                                </FooterTemplate>
+                            </asp:Repeater>
+                   
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
 </asp:Content>

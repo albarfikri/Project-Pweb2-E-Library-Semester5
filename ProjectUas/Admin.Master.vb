@@ -8,11 +8,22 @@
         ElseIf (activepage.Contains("Admin/bukutambah.aspx")) Then
             buku.Attributes.Add("class", "nav-item active")
         ElseIf (activepage.Contains("Admin/bukuedit.aspx")) Then
-            staff.Attributes.Add("class", "nav-item active")
+            buku.Attributes.Add("class", "nav-item active")
+
         ElseIf (activepage.Contains("Admin/petugas.aspx")) Then
             staff.Attributes.Add("class", "nav-item active")
+        ElseIf (activepage.Contains("Admin/petugastambah.aspx")) Then
+            staff.Attributes.Add("class", "nav-item active")
+        ElseIf (activepage.Contains("Admin/petugasedit.aspx")) Then
+            staff.Attributes.Add("class", "nav-item active")
+
         ElseIf (activepage.Contains("Admin/member.aspx")) Then
             member.Attributes.Add("class", "nav-item active")
+        ElseIf (activepage.Contains("Admin/membertambah.aspx")) Then
+            member.Attributes.Add("class", "nav-item active")
+        ElseIf (activepage.Contains("Admin/memberedit.aspx")) Then
+            member.Attributes.Add("class", "nav-item active")
+
         ElseIf (activepage.Contains("Admin/dashboard.aspx")) Then
             dashboard.Attributes.Add("class", "nav-item active")
         ElseIf (activepage.Contains("Admin/maps.aspx")) Then

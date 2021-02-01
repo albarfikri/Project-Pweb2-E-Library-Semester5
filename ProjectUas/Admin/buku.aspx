@@ -27,12 +27,12 @@
                                 </div>
                                 <div class="ml-auto col-md-2">
                                     <div class="align-content-end">
-                                        <a href="bukutambah.aspx">
-                                            <button class="btn btn-primary btn-round">
+                                        
+                                            <asp:LinkButton runat="server" class="btn btn-primary btn-round" PostBackUrl="~/Admin/bukutambah.aspx">
 
                                                 <i class="material-icons">add</i> Tambah
-                                            </button>
-                                        </a>
+                                            </asp:LinkButton>
+                                     
                                     </div>
                                 </div>
                             </div>
