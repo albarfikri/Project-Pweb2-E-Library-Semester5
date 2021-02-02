@@ -40,8 +40,5 @@ Public Class Petugas
             MsgBox("Data is removed successfully.", MsgBoxStyle.Information)
         End If
     End Sub
-
-
-
 End Class
 

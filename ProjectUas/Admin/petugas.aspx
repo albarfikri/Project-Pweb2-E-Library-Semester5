@@ -29,7 +29,8 @@
                                     </div>
                                 </div>
                             </div>
-                            
+                               
+                                             
                             <asp:Repeater ID="RepeaterPetugas" runat="server" OnItemCommand="Petugas_Command">
                                 <HeaderTemplate>
                                     <div class="table-responsive">
@@ -57,13 +58,14 @@
                                                 </th>
                                                 <th>Action
                                                 </th>
-                                      
+                                  
                                             </thead>
                                 </HeaderTemplate>
                                 <ItemTemplate>
                                     <tbody>
 
                                         <tr>
+                                            
                                             <td>
                                                 <%# Container.ItemIndex + 1 %>
                                             </td>
@@ -96,23 +98,20 @@
                                                 <%# Eval("no_hp") %>
                                             </td>
                                             <td>
-                                                <asp:LinkButton ID="edit" runat="server" class="btn btn-warning btn-fab btn-fab-mini btn-round">
+                                                <asp:LinkButton ID="edit" runat="server" CommandArgument='<%# Eval("id") %>' class="btn btn-warning btn-fab btn-fab-mini btn-round" OnClick="Edit_Click">
                                                     <i class="material-icons">edit</i>
                                                </asp:LinkButton>
-                                      
                                                  <asp:LinkButton ID="delete" runat="server" CommandArgument='<%# Eval("id") %>' CommandName="delete" onclientclick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">delete</i>
                                                 </asp:LinkButton>
                                             </td>
                                         </tr>
-
                                     </tbody>
                                 </ItemTemplate>
                                 <FooterTemplate>
                                     </table>
                                 </FooterTemplate>
-                            </asp:Repeater>
-                   
+                            </asp:Repeater>           
                         </div>
                     </div>
                 </div>
@@ -120,5 +119,4 @@
         </div>
     </div>
     
-
 </asp:Content>

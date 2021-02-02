@@ -36,4 +36,12 @@ Public Class petugas1
             MsgBox("Data is removed successfully.", MsgBoxStyle.Information)
         End If
     End Sub
+
+
+    Protected Sub Edit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        Dim btn As LinkButton = CType(sender, LinkButton)
+        Dim id As String = btn.CommandArgument
+        Response.Redirect(String.Format("~/Admin/petugasedit.aspx?id={0}", id))
+    End Sub
+
 End Class

@@ -43,9 +43,9 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-
+                                    <label class="bmd-label-floating">Jenis Kelamin</label>
                                     <div class="form-group">
-                                        <label class="bmd-label-floating">Jenis Kelamin</label>
+                                        
                                         <asp:DropDownList runat="server" class="form-control" type="text" name="jenis_kelamin" ID="jenis_kelamin" placeholder="Jenis kelamin">
                                             <asp:ListItem Value="pria">Pria</asp:ListItem>
                                             <asp:ListItem Value="wanita">Wanita</asp:ListItem>
@@ -71,7 +71,7 @@
                                 <div class="col-md-6">
                                     <div>
                                         <span class="btn btn-raised btn-round btn-rose btn-file">
-                                            <asp:TextBox runat="server" ID="gambar" type="file" name="..." /></asp:TextBox>
+                                            <asp:TextBox runat="server" ID="gambar" type="file" name="..."></asp:TextBox>
                                         </span>
                                     </div>
                                 </div>
@@ -151,7 +151,5 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
     </div>
 </asp:Content>
