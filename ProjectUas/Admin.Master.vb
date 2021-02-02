@@ -26,8 +26,7 @@
 
         ElseIf (activepage.Contains("Admin/dashboard.aspx")) Then
             dashboard.Attributes.Add("class", "nav-item active")
-        ElseIf (activepage.Contains("Admin/maps.aspx")) Then
-            maps.Attributes.Add("class", "nav-item active")
+
         Else
 
         End If

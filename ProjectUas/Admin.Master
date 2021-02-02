@@ -62,12 +62,12 @@
                                 <p>Member</p>
                             </a>
                         </li>
-                        <li id="maps" runat="server" class="nav-item ">
+                   <%--     <li id="maps" runat="server" class="nav-item ">
                             <a class="nav-link" href="https://localhost:44308/Admin/maps.aspx">
                                 <i class="material-icons">location_ons</i>
                                 <p>Maps</p>
                             </a>
-                        </li>
+                        </li>--%>
                     </ul>
                 </div>
             </div>

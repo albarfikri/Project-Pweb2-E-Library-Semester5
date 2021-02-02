@@ -36,6 +36,9 @@
                                     </div>
                                 </div>
                             </div>
+                              
+                            <asp:Repeater ID="RepeaterBuku" runat="server" OnItemCommand="Buku_Command">
+                                <HeaderTemplate>
 
                             <div class="table-responsive">
 
@@ -56,63 +59,51 @@
                                         </th>
                                         <th>Nama Pengarang
                                         </th>
+                                      <%--  <th>Sinopsis</th>--%>
                                         <th>Action
                                         </th>
                                     </thead>
+
+                                    </HeaderTemplate>
+                                <ItemTemplate>
+
+
                                     <tbody>
                                         <tr>
-                                            <td>1
+                                            <td> <%# Container.ItemIndex + 1 %>
                                             </td>
-                                            <td>Harry Potter
-                                            </td>
-                                            <td>
-                                                <img src="https://localhost:44308/Template/TAdmin/assets/img/faces/marc.jpg" height="180" width="140" />
-
-                                            </td>
-                                            <td>Fiksi
-                                            </td>
-                                            <td>12
-                                            </td>
-                                            <td>2007
-                                            </td>
-                                            <td>Richard Antonio 
+                                            <td><%# Eval("judul_buku") %>
                                             </td>
                                             <td>
-                                                <button class="btn btn-warning  btn-fab btn-fab-mini btn-round">
+                                                <img src="../Assets/Img/<%# Eval("gambar") %>" height="180" width="140"  />
+                                            </td>
+                                            <td><%# Eval("kategori") %>
+                                            </td>
+                                            <td><%# Eval("stok") %>
+                                            </td>
+                                            <td><%# Eval("tgl") %>
+                                            </td>
+                                            <td><%# Eval("nama_pengarang") %>
+                                            </td
+                                             <td>
+                                            </td>
+                                         <%--   <td>
+                                            </td>--%>
+                                            <td>
+                                                <asp:LinkButton ID="edit" runat="server" CommandArgument='<%# Eval("id_buku") %>' OnClick="Edit_Click" class="btn btn-warning  btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">edit</i>
-                                                </button>
-                                                <button class="btn btn-danger btn-fab btn-fab-mini btn-round">
+                                                </asp:LinkButton>
+                                                <asp:LinkButton ID="delete" runat="server" CommandArgument='<%# Eval("id_buku") %>' onclientclick="return confirm('Are you sure you want to delete?')" CommandName="delete"  class="btn btn-danger btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">delete</i>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>1
-                                            </td>
-                                            <td>Antara ada dan tiada
-                                            </td>
-                                            <td>
-                                                <img src="../Template/TAdmin/assets/img/faces/avatar.jpg" height="180" width="140" />
-                                            </td>
-                                            <td>Novel
-                                            </td>
-                                            <td>12
-                                            </td>
-                                            <td>2007
-                                            </td>
-                                            <td>Terra Larras
-                                            </td>
-                                            <td>
-                                                <button class="btn btn-warning  btn-fab btn-fab-mini btn-round">
-                                                    <i class="material-icons">edit</i>
-                                                </button>
-                                                <button class="btn btn-danger btn-fab btn-fab-mini btn-round">
-                                                    <i class="material-icons">delete</i>
-                                                </button>
+                                                </asp:LinkButton>
                                             </td>
                                         </tr>
                                     </tbody>
-                                </table>
+                                </ItemTemplate>
+                                <FooterTemplate>
+                                    </table>
+                                </FooterTemplate>
+                            </asp:Repeater>     
                             </div>
                         </div>
                     </div>

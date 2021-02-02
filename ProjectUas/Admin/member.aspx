@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Admin.Master" CodeBehind="member.aspx.vb" Inherits="ProjectUas.Petugas" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    Anggota</asp:Content>
+    Anggota
+</asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="content">
@@ -26,13 +27,13 @@
                                 </div>
                                 <div class="ml-auto col-md-2">
                                     <div class="align-content-end">
-                                        <asp:LinkButton runat="server" class="btn btn-primary btn-round" PostBackUrl="~/Admin/membertambah.aspx">
+                                        <asp:LinkButton Visible="false" runat="server" class="btn btn-primary btn-round" PostBackUrl="~/Admin/membertambah.aspx">
                                             <i  class="material-icons">add</i> Tambah
                                         </asp:LinkButton>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <asp:Repeater ID="RepeaterMember" runat="server" OnItemCommand="Member_Command">
                                 <HeaderTemplate>
                                     <div class="table-responsive">
@@ -60,7 +61,7 @@
                                                 </th>
                                                 <th>Action
                                                 </th>
-                                      
+
                                             </thead>
                                 </HeaderTemplate>
                                 <ItemTemplate>
@@ -74,7 +75,7 @@
                                                 <%# Eval("nama") %>
                                             </td>
                                             <td>
-                                                <img src="../Template/TAdmin/assets/img/faces/card-profile1-square.jpg" height="180" width="140" />
+                                                <img src="../Assets/Img/<%# Eval("gambar") %>" height="180" width="140" />
                                             </td>
                                             <td>
                                                 <%# Eval("nik") %>
@@ -101,9 +102,9 @@
                                             <td>
                                                 <asp:LinkButton ID="edit" runat="server" class="btn btn-warning btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">edit</i>
-                                               </asp:LinkButton>
-                                      
-                                                 <asp:LinkButton ID="delete" runat="server" CommandArgument='<%# Eval("id") %>' CommandName="delete" onclientclick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-fab btn-fab-mini btn-round">
+                                                </asp:LinkButton>
+
+                                                <asp:LinkButton Visible="false" runat="server" CommandArgument='<%# Eval("id") %>' CommandName="delete" OnClientClick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">delete</i>
                                                 </asp:LinkButton>
                                             </td>
@@ -115,13 +116,13 @@
                                     </table>
                                 </FooterTemplate>
                             </asp:Repeater>
-                   
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
 
 </asp:Content>

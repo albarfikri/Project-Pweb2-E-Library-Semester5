@@ -10,88 +10,125 @@
                     <div class="card">
                         <div class="card-header card-header-primary">
                             <h4 class="card-title">Tambah Member</h4>
-                            <p class="card-category">Complete your book</p>
+                            <p class="card-category">Complete your member</p>
                         </div>
                         <div class="card-body">
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Nama</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Nik</label>
-                                            <input type="email" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Alamat</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">TTL</label>
-                                            <input type="date" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Jenis Kelamin</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Email</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">No Hp</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Email</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <button type="submit" class="btn btn-primary pull-right">Tambah Buku</button>
-                                <div class="clearfix"></div>
-                            </form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="bmd-label-floating">Nama</label>
+                                        <asp:TextBox runat="server" ID="nama" type="text" name="nama" class="form-control"></asp:TextBox>
+                                        <%--    <input id="Text1" type="text" />--%>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="bmd-label-floating">Nik</label>
+                                        <asp:TextBox runat="server" ID="nik" type="number" class="form-control"></asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="bmd-label-floating">Tanggal Lahir</label>
+                                    <div class="form-group">
+                                        <asp:TextBox runat="server" ID="ttl" type="date" class="form-control"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="bmd-label-floating">Jenis Kelamin</label>
+                                    <div class="form-group">
+                                        
+                                        <asp:DropDownList runat="server" class="form-control" type="text" name="jenis_kelamin" ID="jenis_kelamin" placeholder="Jenis kelamin">
+                                            <asp:ListItem Value="pria">Pria</asp:ListItem>
+                                            <asp:ListItem Value="wanita">Wanita</asp:ListItem>
+                                        </asp:DropDownList>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="bmd-label-floating">Alamat</label>
+                                        <asp:TextBox runat="server" ID="alamat" type="text" class="form-control"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>
+                                        <span class="btn btn-raised btn-round btn-rose btn-file">
+                                            <asp:TextBox runat="server" ID="gambar" type="file" name="..."></asp:TextBox>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="bmd-label-floating">Email</label>
+                                        <asp:TextBox runat="server" ID="email" type="email" class="form-control"></asp:TextBox>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="bmd-label-floating">No Hp</label>
+                                        <asp:TextBox runat="server" ID="no_hp" type="number" class="form-control"></asp:TextBox>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="bmd-label-floating">username</label>
+                                        <asp:TextBox runat="server" ID="username" type="text" class="form-control"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="bmd-label-floating">password</label>
+                                        <asp:TextBox runat="server" ID="password" type="password" class="form-control"></asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                    </div>
+                                </div>
+                            </div>
+                            <asp:LinkButton ID="tambahmember" type="submit" runat="server" class="btn btn-primary pull-right">Tambah </asp:LinkButton>
+                            <div class="clearfix"></div>
+
                         </div>
                     </div>
                 </div>

@@ -9,8 +9,8 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title ">Tabel Member</h4>
-                            <p class="card-category">Kelola Member secara lebih detil disini</p>
+                            <h4 class="card-title ">Tabel Petugas</h4>
+                            <p class="card-category">Kelola Petugas secara lebih detil disini</p>
                         </div>
                         <div class="card-body">
                             <div class="d-flex">
