@@ -14,8 +14,8 @@ Public Class bukutambah
 
         Else
             Dim cmd As New SqlCommand
-            cmd.CommandText = "INSERT INTO buku (judul_buku,kategori,stok,tgl,nama_pengarang,sinopsis,gambar) values 
-                            ('" & judul_buku.Text & "','" & kategori.Text & "','" & stok.Text & "','" & tgl.Text & "','" & nama_pengarang.Text & "','" & sinopsis.InnerText & "','" & gambar.Text & "')"
+            cmd.CommandText = "INSERT INTO buku (judul_buku,kategori,stok,tgl,nama_pengarang,sinopsis,gambar,filebuku) values 
+                            ('" & judul_buku.Text & "','" & kategori.Text & "','" & stok.Text & "','" & tgl.Text & "','" & nama_pengarang.Text & "','" & sinopsis.InnerText & "','" & gambar.Text & "','" & filebuku.Text & "')"
             cmd.Connection = conn
             conn.Open()
             cmd.ExecuteNonQuery()

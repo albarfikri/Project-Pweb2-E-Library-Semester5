@@ -47,8 +47,8 @@
                                     <div class="form-group">
                                         
                                         <asp:DropDownList runat="server" class="form-control" type="text" name="jenis_kelamin" ID="jenis_kelamin" placeholder="Jenis kelamin">
-                                            <asp:ListItem Value="pria">Pria</asp:ListItem>
-                                            <asp:ListItem Value="wanita">Wanita</asp:ListItem>
+                                            <asp:ListItem Value="Pria">Pria</asp:ListItem>
+                                            <asp:ListItem Value="Wanita">Wanita</asp:ListItem>
                                         </asp:DropDownList>
                                     </div>
 

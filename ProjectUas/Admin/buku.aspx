@@ -90,6 +90,9 @@
                                          <%--   <td>
                                             </td>--%>
                                             <td>
+                                                 <asp:LinkButton ID="open" runat="server" CommandArgument='<%# Eval("filebuku") %>' OnClick="open_Click" class="btn btn-success btn-fab btn-fab-mini btn-round">
+                                                    <i class="material-icons">search</i>
+                                                </asp:LinkButton>
                                                 <asp:LinkButton ID="edit" runat="server" CommandArgument='<%# Eval("id_buku") %>' OnClick="Edit_Click" class="btn btn-warning  btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">edit</i>
                                                 </asp:LinkButton>

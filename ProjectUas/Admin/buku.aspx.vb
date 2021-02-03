@@ -34,6 +34,17 @@ Public Class buku
             BindRepeater()
             MsgBox("Data is removed successfully.", MsgBoxStyle.Information)
         End If
+        If e.CommandName = "open" Then
+            If con.State = ConnectionState.Closed Then
+                con.Open()
+            End If
+            Dim cmd As New SqlCommand("delete from buku where id_buku = @id_buku", con)
+            cmd.Parameters.AddWithValue("@id_buku", e.CommandArgument)
+            cmd.ExecuteNonQuery()
+            cmd.Dispose()
+            BindRepeater()
+            MsgBox("Data is removed successfully.", MsgBoxStyle.Information)
+        End If
     End Sub
 
     Protected Sub Edit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -42,5 +53,9 @@ Public Class buku
         Response.Redirect(String.Format("~/Admin/bukuedit.aspx?id={0}", id))
     End Sub
 
-
+    Protected Sub open_Click(sender As Object, e As EventArgs)
+        Dim btn As LinkButton = CType(sender, LinkButton)
+        Dim buku As String = btn.CommandArgument
+        Response.Redirect(String.Format("~/Assets/pdf/{0}", buku))
+    End Sub
 End Class

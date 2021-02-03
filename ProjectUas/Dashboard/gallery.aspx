@@ -76,6 +76,14 @@
                                                         </div>
                                                         <div class="mu-single-gallery-info">
                                                             <div class="mu-single-gallery-info-inner">
+                                                                    <div class="mu-testimonial-quote">
+                                                                  
+                                                                            <blockquote>
+                                                                                <br>
+                                                                                <p><%# Eval("sinopsis") %>.</p>
+                                                                            </blockquote>
+                                                                        </div>
+
                                                                 <h4><%# Eval("judul_buku") %></h4>
                                                                 <p><%# Eval("kategori") %></p>
                                                                 <a href="#" class="mu-view-btn"><span class="fa fa-search"></span></a>
@@ -84,41 +92,45 @@
                                                                 <div class="portfolio-detail">
                                                                     <a href="#" class="modal-close-btn"><span class="fa fa-times"></span></a>
                                                                     <div class="utf_dashboard_list_box margin-bottom-25">
-                                                                        <img alt="img" src="../Assets/Img/<%# Eval("gambar") %>" width="290" height="420"></a>
-                                                                        <h4>Deskripsi Koleksi <span class="pull-right"></span></h4>
-                                                                        <div class="dashboard-list-box table-responsive invoices with-icons" style="padding: 5px">
-                                                                            <table class="table table-hover table-striped table-condensed">
+                                                                        <img alt="img" src="../Assets/Img/<%# Eval("gambar") %>" width="290" height="400"></a>
+                                                                        <h4><b>Deskripsi Koleksi </b><span class="pull-right"></span></h4>
+                                                                        <div class="dashboard-list-box table-responsive invoices with-icons" style="padding: 10px">
+                                                                            <table class="table table-hover table-striped table-condensed" width="300px">
                                                                                 <tbody>
                                                                                     <tr>
-                                                                                        <td>Nama Buku</td>
-                                                                                        <td><%# Eval("judul_buku") %></td>
+                                                                                        <td style="text-align: center">Nama Buku</td>
+                                                                                        <td style="text-align: center"><%# Eval("judul_buku") %></td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td>Kategori</td>
-                                                                                        <td><%# Eval("kategori") %></td>
+                                                                                        <td style="text-align: center">Kategori</td>
+                                                                                        <td style="text-align: center"><%# Eval("kategori") %></td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td width="200">Nama Pengarang</td>
-                                                                                        <td><%# Eval("nama_pengarang") %></td>
+                                                                                        <td width="500">Nama Pengarang</td>
+                                                                                        <td style="text-align: center"><%# Eval("nama_pengarang") %></td>
                                                                                     </tr>
                                                                                     <tr>
-                                                                                        <td>Stok</td>
-                                                                                        <td><b><%# Eval("stok") %></b></td>
-                                                                                    </tr>                                                          
+                                                                                        <td style="text-align: center">Stok</td>
+                                                                                        <td style="text-align: center"><b><%# Eval("stok") %></b></td>
+                                                                                    </tr>
                                                                                     <tr>
-                                                                                        <td>~
-                                                                                        </td>
-                                                                                        <td>~</td>
+                                                                                        <td colspan="2"> <h4><b>Sinopsis </b><span class="pull-right"></span></h4></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td colspan="2"><p><%# Eval("sinopsis") %></p>  </td>
+                                                                              
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
-                                                                            Sinopsis
-                                                                              <p><%# Eval("sinopsis") %></p>
-                                                                         
+                                                                            
                                                                         </div>
+                                    
+                                                                        
                                                                     </div>
 
+
                                                                 </div>
+                                                                    
                                                             </div>
                                                         </div>
                                                     </div>

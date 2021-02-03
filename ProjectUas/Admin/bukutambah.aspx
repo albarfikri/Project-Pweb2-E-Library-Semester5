@@ -47,11 +47,11 @@
                                     <div class="form-group">
                                         
                                         <asp:DropDownList runat="server" class="form-control" type="text" name="kategori" ID="kategori" placeholder="Kategori">
-                                            <asp:ListItem Value="novel">Novel</asp:ListItem>
-                                            <asp:ListItem Value="komik">Komik</asp:ListItem>
-                                            <asp:ListItem Value="pendidikan">Pendidikan</asp:ListItem>
-                                            <asp:ListItem Value="kesehatan">Kesehatan</asp:ListItem>
-                                            <asp:ListItem Value="teknologi">Teknologi</asp:ListItem>
+                                            <asp:ListItem Value="Novel">Novel</asp:ListItem>
+                                            <asp:ListItem Value="Komik">Komik</asp:ListItem>
+                                            <asp:ListItem Value="Pendidikan">Pendidikan</asp:ListItem>
+                                            <asp:ListItem Value="Kesehatan">Kesehatan</asp:ListItem>
+                                            <asp:ListItem Value="Teknologi">Teknologi</asp:ListItem>
                                         </asp:DropDownList>
                                     </div>
                                 </div>
@@ -72,6 +72,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div>
+                                         <label class="bmd-label-floating">Picture</label>
                                         <span class="btn btn-raised btn-round btn-rose btn-file">
                                             <asp:TextBox runat="server" ID="gambar" type="file" name="..."></asp:TextBox>
                                         </span>
@@ -91,7 +92,14 @@
                                         <label class="bmd-label-floating">Sinopsis</label>
                                         <textarea ID="sinopsis" runat="server" class="form-control"  rows="5"></textarea>
                                     </div>
-
+                                </div>
+                                <div class="col-md-6">
+                                    <div>
+                                         <label class="bmd-label-floating">File Buku</label>
+                                        <span class="btn btn-raised btn-round btn-rose btn-file">
+                                            <asp:TextBox runat="server" ID="filebuku" type="file" name="..."></asp:TextBox>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -111,7 +119,7 @@
                     <div class="card card-profile">
                         <div class="card-avatar">
                             <a href="javascript:;">
-                                <img class="img" src="../assets/img/faces/marc.jpg" />
+                                <img class="img" src="Template/TAdmin/assets/img/faces/marc.jpg" />
                             </a>
                         </div>
                         <div class="card-body">

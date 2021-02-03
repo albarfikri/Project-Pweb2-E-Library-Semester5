@@ -77,6 +77,15 @@ Partial Public Class bukutambah
     Protected WithEvents sinopsis As Global.System.Web.UI.HtmlControls.HtmlTextArea
 
     '''<summary>
+    '''filebuku control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents filebuku As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''tambahbuku control.
     '''</summary>
     '''<remarks>

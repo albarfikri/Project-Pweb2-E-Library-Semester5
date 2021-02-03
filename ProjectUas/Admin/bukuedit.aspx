@@ -52,11 +52,11 @@
                                     <div class="form-group">
                                         
                                         <asp:DropDownList runat="server" class="form-control" type="text" name="kategori" ID="kategori" placeholder="Kategori">
-                                            <asp:ListItem Value="novel">Novel</asp:ListItem>
-                                            <asp:ListItem Value="komik">Komik</asp:ListItem>
-                                            <asp:ListItem Value="pendidikan">Pendidikan</asp:ListItem>
-                                            <asp:ListItem Value="kesehatan">Kesehatan</asp:ListItem>
-                                            <asp:ListItem Value="teknologi">Teknologi</asp:ListItem>
+                                            <asp:ListItem Value="Novel">Novel</asp:ListItem>
+                                            <asp:ListItem Value="Komik">Komik</asp:ListItem>
+                                            <asp:ListItem Value="Pendidikan">Pendidikan</asp:ListItem>
+                                            <asp:ListItem Value="Kesehatan">Kesehatan</asp:ListItem>
+                                            <asp:ListItem Value="Teknologi">Teknologi</asp:ListItem>
                                         </asp:DropDownList>
                                     </div>
                                 </div>
