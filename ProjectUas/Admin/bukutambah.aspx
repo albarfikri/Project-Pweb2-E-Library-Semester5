@@ -72,7 +72,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div>
-                                         <label class="bmd-label-floating">Picture</label>
+                                         <label class="bmd-label-floating">Pictures</label>
                                         <span class="btn btn-raised btn-round btn-rose btn-file">
                                             <asp:TextBox runat="server" ID="gambar" type="file" name="..."></asp:TextBox>
                                         </span>

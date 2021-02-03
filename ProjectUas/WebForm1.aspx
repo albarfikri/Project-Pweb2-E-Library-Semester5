@@ -9,7 +9,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:LinkButton ID="LinkButton1" runat="server">LinkButton</asp:LinkButton>
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <asp:Button ID="Button1" runat="server" Text="Button" />
         </div>
     </form>
 </body>

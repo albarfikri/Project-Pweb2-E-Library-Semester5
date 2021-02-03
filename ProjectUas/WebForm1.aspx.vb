@@ -5,7 +5,10 @@
 
     End Sub
 
-    Protected Sub LinkButton1_Click(sender As Object, e As EventArgs) Handles LinkButton1.Click
 
+
+    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Label1.Text = DateTime.Now()
+        Dim test As String = DateTime.Now()
     End Sub
 End Class

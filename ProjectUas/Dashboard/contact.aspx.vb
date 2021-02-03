@@ -9,10 +9,11 @@ Public Class contact
     End Sub
 
     Protected Sub komentambah_Click(sender As Object, e As EventArgs) Handles komentambah.Click
+        Dim tgl As String = DateTime.Now()
 
         Dim cmd As New SqlCommand
-        cmd.CommandText = "INSERT INTO komen (email, subject, komen, nama) values 
-                            ('" & email.Text & "','" & subject.Text & "','" & komen.InnerHtml & "','" & nama.Text & "')"
+        cmd.CommandText = "INSERT INTO dafcom (email, subject, komen, nama, tgl) values 
+                            ('" & email.Text & "','" & subject.Text & "','" & komen.InnerHtml & "','" & nama.Text & "','" & tgl & "')"
         cmd.Connection = conn
         conn.Open()
         cmd.ExecuteNonQuery()

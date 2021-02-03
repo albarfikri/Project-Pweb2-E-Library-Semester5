@@ -63,7 +63,6 @@
                     </p>
                     <p class="comment-form-url">
                       <label for="subject">Subject</label>
-                      
                         <asp:TextBox  runat="server" ID="subject" name="subject" size="30"></asp:TextBox> 
                     </p>
                     <p class="comment-form-comment">
@@ -72,6 +71,7 @@
                     </p>                
                     <p class="form-submit">
                       <asp:LinkButton id="komentambah" runat="server" type="submit" class="mu-post-btn">Submit Message</asp:LinkButton>
+                       
                     </p>        
                   </form>
                 </div>

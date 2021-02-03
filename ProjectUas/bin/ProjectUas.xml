@@ -136,6 +136,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:ProjectUas.comment._RepeaterKomen">
+<summary>
+RepeaterKomen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:ProjectUas.membertambah._nama">
 <summary>
 nama control.
@@ -478,6 +487,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:ProjectUas.library._comment">
+<summary>
+comment control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:ProjectUas.library._Content">
 <summary>
 Content control.
@@ -703,9 +721,18 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ProjectUas.WebForm1._LinkButton1">
+<member name="F:ProjectUas.WebForm1._Label1">
 <summary>
-LinkButton1 control.
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.WebForm1._Button1">
+<summary>
+Button1 control.
 </summary>
 <remarks>
 Auto-generated field.

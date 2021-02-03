@@ -98,6 +98,7 @@
     <Content Include="Admin\buku.aspx" />
     <Content Include="Admin\bukuedit.aspx" />
     <Content Include="Admin\bukutambah.aspx" />
+    <Content Include="Admin\comment.aspx" />
     <Content Include="Admin\dashboard.aspx" />
     <Content Include="Admin\memberedit.aspx" />
     <Content Include="Admin\membertambah.aspx" />
@@ -461,6 +462,13 @@
     </Compile>
     <Compile Include="Admin\bukutambah.aspx.vb">
       <DependentUpon>bukutambah.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\comment.aspx.designer.vb">
+      <DependentUpon>comment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\comment.aspx.vb">
+      <DependentUpon>comment.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Admin\dashboard.aspx.designer.vb">

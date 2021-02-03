@@ -62,6 +62,12 @@
                                 <p>Member</p>
                             </a>
                         </li>
+                            <li id="comment" runat="server" class="nav-item ">
+                            <a class="nav-link" href="https://localhost:44308/Admin/comment.aspx">
+                                 <i class="material-icons">library_books</i>
+                                <p>Comment</p>
+                            </a>
+                        </li>
                    <%--     <li id="maps" runat="server" class="nav-item ">
                             <a class="nav-link" href="https://localhost:44308/Admin/maps.aspx">
                                 <i class="material-icons">location_ons</i>
