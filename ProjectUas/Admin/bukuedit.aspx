@@ -8,8 +8,8 @@
                 <div class="col-md-8">
                     <div class="card">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title">Tambah Buku</h4>
-                            <p class="card-category">Complete your Book</p>
+                            <h4 class="card-title">Edit Buku</h4>
+                            <p class="card-category">Complete your Book Editing</p>
                         </div>
                         <div class="card-body">
 
@@ -77,6 +77,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div>
+                                         <label class="bmd-label-floating">Picture</label>
                                         <span class="btn btn-raised btn-round btn-rose btn-file">
                                             <asp:TextBox runat="server" ID="gambar" type="file"></asp:TextBox>
                                         </span>
@@ -98,6 +99,15 @@
                                     </div>
 
                                 </div>
+
+                                <div class="col-md-6">
+                                    <div>
+                                         <label class="bmd-label-floating">File Buku</label>
+                                        <span class="btn btn-raised btn-round btn-rose btn-file">
+                                            <asp:TextBox runat="server" ID="filebuku" type="file" name="..."></asp:TextBox>
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="row">
@@ -106,7 +116,7 @@
                                     </div>
                                 </div>
                             </div>
-                             <asp:LinkButton ID="editbuku" type="submit" runat="server" class="btn btn-primary pull-right" CommandName="update" CommandArgument='<%#Eval("id_buku") %>'>Tambah </asp:LinkButton>
+                             <asp:LinkButton ID="editbuku" type="submit" runat="server" class="btn btn-primary pull-right" CommandName="update" CommandArgument='<%#Eval("id_buku") %>'>Update</asp:LinkButton>
                             <div class="clearfix"></div>
                              </ItemTemplate>
                              </asp:Repeater>

@@ -16,6 +16,7 @@
                             <input type="search" placeholder="Masukkan Kata & Tekan Enter">
                         </form>
                     </div>
+                    <a href="contact.aspx">contact.aspx</a>
                 </div>
             </div>
         </div>

@@ -32,15 +32,6 @@ Partial Public Class dashboard1
     Protected WithEvents switcher As Global.System.Web.UI.HtmlControls.HtmlLink
 
     '''<summary>
-    '''form1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
-
-    '''<summary>
     '''index control.
     '''</summary>
     '''<remarks>

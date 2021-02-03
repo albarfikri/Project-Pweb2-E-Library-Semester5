@@ -8,8 +8,8 @@
                 <div class="col-md-8">
                     <div class="card">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title">Tambah Petugas</h4>
-                            <p class="card-category">Complete your staff</p>
+                            <h4 class="card-title">Edit Petugas</h4>
+                            <p class="card-category">Complete your staff Editing </p>
                         </div>
                         <div class="card-body">
 
@@ -135,7 +135,7 @@
                             </div>
 
                                  
-                            <asp:LinkButton ID="editpetugas" type="submit" runat="server" class="btn btn-primary pull-right" CommandName="update" CommandArgument='<%#Eval("id") %>'>Tambah </asp:LinkButton>
+                            <asp:LinkButton ID="editpetugas" type="submit" runat="server" class="btn btn-primary pull-right" CommandName="update" CommandArgument='<%#Eval("id") %>'>Update </asp:LinkButton>
                             <div class="clearfix"></div>
                              </ItemTemplate>
                              </asp:Repeater>

@@ -33,9 +33,10 @@ Public Class bukuedit
             Dim nama_pengarang As String = DirectCast(e.Item.FindControl("nama_pengarang"), TextBox).Text
             Dim sinopsis As String = DirectCast(e.Item.FindControl("sinopsis"), HtmlTextArea).InnerText
             Dim gambar As String = DirectCast(e.Item.FindControl("gambar"), TextBox).Text
+            Dim filebuku As String = DirectCast(e.Item.FindControl("filebuku"), TextBox).Text
 
 
-            Dim adp As New SqlDataAdapter("Update buku set judul_buku= @judul_buku, kategori=@kategori, stok=@stok, tgl=@tgl, nama_pengarang=@nama_pengarang, sinopsis=@sinopsis, gambar=@gambar where id_buku = @id_buku", con)
+            Dim adp As New SqlDataAdapter("Update buku set judul_buku= @judul_buku, kategori=@kategori, stok=@stok, tgl=@tgl, nama_pengarang=@nama_pengarang, sinopsis=@sinopsis, gambar=@gambar, filebuku=@filebuku where id_buku = @id_buku", con)
             adp.SelectCommand.Parameters.AddWithValue("@judul_buku", judul_buku)
             adp.SelectCommand.Parameters.AddWithValue("@kategori", kategori)
             adp.SelectCommand.Parameters.AddWithValue("@stok", stok)
@@ -43,6 +44,7 @@ Public Class bukuedit
             adp.SelectCommand.Parameters.AddWithValue("@nama_pengarang", nama_pengarang)
             adp.SelectCommand.Parameters.AddWithValue("@sinopsis", sinopsis)
             adp.SelectCommand.Parameters.AddWithValue("@gambar", gambar)
+            adp.SelectCommand.Parameters.AddWithValue("@filebuku", filebuku)
             adp.SelectCommand.Parameters.AddWithValue("@id_buku", e.CommandArgument)
             Dim ds As New DataSet()
             adp.Fill(ds)

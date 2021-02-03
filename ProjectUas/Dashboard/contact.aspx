@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Dashboard.Master" CodeBehind="contact.aspx.vb" Inherits="ProjectUas.contact" %>
+﻿    <%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Dashboard.Master" CodeBehind="contact.aspx.vb" Inherits="ProjectUas.contact" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     Contact
 </asp:Content>
@@ -52,25 +52,26 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="mu-contact-left">
-                  <form class="contactform">                  
+                  <form class="contactform" runat="server">                  
                     <p class="comment-form-author">
-                      <label for="author">Name <span class="required">*</span></label>
-                      <input type="text" required="required" size="30" value="" name="author">
+                      <label for="author">Name <span class="required">*</span></label>  
+                        <asp:TextBox runat="server" ID="nama"  name="nama" size="30"></asp:TextBox>
                     </p>
                     <p class="comment-form-email">
-                      <label for="email">Email <span class="required">*</span></label>
-                      <input type="email" required="required" aria-required="true" value="" name="email">
+                      <label for="email">Email <span class="required">*</span></label>        
+                        <asp:TextBox runat="server" ID="email"  name="email" size="30" type="email"></asp:TextBox>
                     </p>
                     <p class="comment-form-url">
                       <label for="subject">Subject</label>
-                      <input type="text" name="subject">  
+                      
+                        <asp:TextBox  runat="server" ID="subject" name="subject" size="30"></asp:TextBox> 
                     </p>
                     <p class="comment-form-comment">
                       <label for="comment">Message</label>
-                      <textarea required="required" aria-required="true" rows="8" cols="45" name="comment"></textarea>
+                      <textarea runat="server" ID="komen" required="required" name="komen" aria-required="true" rows="8" cols="45"></textarea>
                     </p>                
                     <p class="form-submit">
-                      <input type="submit" value="Send Message" class="mu-post-btn" name="submit">
+                      <asp:LinkButton id="komentambah" runat="server" type="submit" class="mu-post-btn">Submit Message</asp:LinkButton>
                     </p>        
                   </form>
                 </div>

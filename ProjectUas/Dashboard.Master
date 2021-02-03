@@ -85,7 +85,7 @@
     </script>
 
 <body>
-    <form id="form1" runat="server">
+
         <!--START SCROLL TOP BUTTON -->
         <a class="scrollToTop" href="#">
             <i class="fa fa-angle-up"></i>
@@ -179,7 +179,7 @@
             </div>
             <!-- end footer bottom -->
         </footer>
-    </form>
+ 
 
     <!-- jQuery library -->
     <script src="https://localhost:44308/Template/Dashboard/assets/js/jquery.min.js"></script>

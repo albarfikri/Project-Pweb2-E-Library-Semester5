@@ -505,15 +505,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ProjectUas.dashboard1._form1">
-<summary>
-form1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:ProjectUas.dashboard1._index">
 <summary>
 index control.
@@ -553,6 +544,51 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:ProjectUas.dashboard1._ContentPlaceHolder1">
 <summary>
 ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.contact._nama">
+<summary>
+nama control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.contact._email">
+<summary>
+email control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.contact._subject">
+<summary>
+subject control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.contact._komen">
+<summary>
+komen control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.contact._komentambah">
+<summary>
+komentambah control.
 </summary>
 <remarks>
 Auto-generated field.
