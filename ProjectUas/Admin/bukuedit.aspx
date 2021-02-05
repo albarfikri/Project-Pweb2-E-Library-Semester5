@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Admin.Master" CodeBehind="bukuedit.aspx.vb" Inherits="ProjectUas.bukuedit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    Edit Buku
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
         <div class="content">

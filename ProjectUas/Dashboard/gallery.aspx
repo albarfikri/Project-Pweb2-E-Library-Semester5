@@ -80,7 +80,7 @@
                                                                   
                                                                             <blockquote>
                                                                                 <br>
-                                                                                <p><%# Eval("sinopsis") %>.</p>
+                                                                                <p>"<%# Eval("sinopsis") %>."</p>
                                                                             </blockquote>
                                                                         </div>
 

@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Admin.Master" CodeBehind="petugastambah.aspx.vb" Inherits="ProjectUas.petugastambah" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    Tambah Petugas
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="content">

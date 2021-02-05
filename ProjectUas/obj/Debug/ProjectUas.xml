@@ -37,6 +37,15 @@ ProjectUas
  Returns the Asp log object.
  </summary>
 </member>
+<member name="F:ProjectUas.buku._RepeaterModalBuku">
+<summary>
+RepeaterModalBuku control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:ProjectUas.buku._RepeaterBuku">
 <summary>
 RepeaterBuku control.
@@ -712,27 +721,45 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ProjectUas.WebForm1._form1">
+<member name="F:ProjectUas.Member._head">
 <summary>
-form1 control.
+head control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ProjectUas.WebForm1._Label1">
+<member name="F:ProjectUas.Member._dashboardmember">
 <summary>
-Label1 control.
+dashboardmember control.
 </summary>
 <remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:ProjectUas.WebForm1._Button1">
+<member name="F:ProjectUas.Member._memberbuku">
 <summary>
-Button1 control.
+memberbuku control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.Member._Content">
+<summary>
+Content control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.memberbuku._RepeaterBuku">
+<summary>
+RepeaterBuku control.
 </summary>
 <remarks>
 Auto-generated field.

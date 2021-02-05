@@ -21,8 +21,7 @@ Public Class login
                 Response.Redirect("~/Admin/dashboard.aspx")
             ElseIf ds.Tables(0).Rows(0)("kategori") = "member" Then
                 MsgBox("Authentication Successfully.", MsgBoxStyle.Information)
-                Response.Redirect("index.aspx")
-
+                Response.Redirect(String.Format("~/Member/dashboardmember.aspx?id={0}", "id_buku"))
             End If
         Else
             MsgBox("Username and Password do not match !", MsgBoxStyle.Exclamation)

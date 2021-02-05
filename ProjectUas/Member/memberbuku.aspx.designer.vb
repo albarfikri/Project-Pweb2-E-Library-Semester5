@@ -11,16 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class buku
-
-    '''<summary>
-    '''RepeaterModalBuku control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents RepeaterModalBuku As Global.System.Web.UI.WebControls.Repeater
+Partial Public Class memberbuku
 
     '''<summary>
     '''RepeaterBuku control.

@@ -129,6 +129,9 @@
     <Content Include="Dashboard\gallery.aspx" />
     <Content Include="Dashboard\index.aspx" />
     <Content Include="Dashboard\registrasi.aspx" />
+    <Content Include="Member\dashboardmember.aspx" />
+    <Content Include="Member\datadiri.aspx" />
+    <Content Include="Member\memberbuku.aspx" />
     <Content Include="Scripts\bootstrap-material-design.min.js" />
     <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\popper.min.js" />
@@ -440,7 +443,6 @@
     <Content Include="Template\TAdmin\gulpfile.js" />
     <Content Include="Template\TAdmin\template.html" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin\buku.aspx.designer.vb">
@@ -576,6 +578,34 @@
       <DependentUpon>registrasi.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Member.Master.designer.vb">
+      <DependentUpon>Member.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Member.Master.vb">
+      <DependentUpon>Member.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\dashboardmember.aspx.designer.vb">
+      <DependentUpon>dashboardmember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\dashboardmember.aspx.vb">
+      <DependentUpon>dashboardmember.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Member\datadiri.aspx.designer.vb">
+      <DependentUpon>datadiri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\datadiri.aspx.vb">
+      <DependentUpon>datadiri.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Member\memberbuku.aspx.designer.vb">
+      <DependentUpon>memberbuku.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\memberbuku.aspx.vb">
+      <DependentUpon>memberbuku.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -594,13 +624,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -627,6 +650,7 @@
     <Content Include="Assets\pdf\EssentialGrammarInUse.pdf" />
     <Content Include="Assets\pdf\Persona.pdf" />
     <Content Include="Assets\pdf\The.Good.Grammar.Book.pdf" />
+    <Content Include="Member.Master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

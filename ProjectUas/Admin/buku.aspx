@@ -27,55 +27,91 @@
                                 </div>
                                 <div class="ml-auto col-md-2">
                                     <div class="align-content-end">
-                                        
-                                            <asp:LinkButton runat="server" class="btn btn-primary btn-round" PostBackUrl="~/Admin/bukutambah.aspx">
+
+                                        <asp:LinkButton runat="server" class="btn btn-primary btn-round" PostBackUrl="~/Admin/bukutambah.aspx">
 
                                                 <i class="material-icons">add</i> Tambah
-                                            </asp:LinkButton>
-                                     
+                                        </asp:LinkButton>
+
                                     </div>
                                 </div>
                             </div>
-                              
+
+
+                            <!-- modal -->
+
+
+                        
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                             <asp:Repeater ID="RepeaterModalBuku" runat="server">
+                                                       <ItemTemplate>
+                                                           <%# Eval("judul_buku") %>
+                                             </ItemTemplate>
+                                                 </asp:Repeater>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Modal -->
+
+
                             <asp:Repeater ID="RepeaterBuku" runat="server" OnItemCommand="Buku_Command">
                                 <HeaderTemplate>
 
-                            <div class="table-responsive">
+                                    <div class="table-responsive">
 
-                                <table class="table">
+                                        <table class="table">
 
-                                    <thead class=" text-primary">
-                                        <th>No
-                                        </th>
-                                        <th>Judul Buku
-                                        </th>
-                                        <th>Gambar
-                                        </th>
-                                        <th>Jenis
-                                        </th>
-                                        <th>Stok
-                                        </th>
-                                        <th>Tahun Terbit
-                                        </th>
-                                        <th>Nama Pengarang
-                                        </th>
-                                      <%--  <th>Sinopsis</th>--%>
-                                        <th>Action
-                                        </th>
-                                    </thead>
-
-                                    </HeaderTemplate>
+                                            <thead class=" text-primary">
+                                                <th>No
+                                                </th>
+                                                <th>Judul Buku
+                                                </th>
+                                                <th>Gambar
+                                                </th>
+                                                <th>Jenis
+                                                </th>
+                                                <th>Stok
+                                                </th>
+                                                <th>Tahun Terbit
+                                                </th>
+                                                <th>Nama Pengarang
+                                                </th>
+                                                <%--  <th>Sinopsis</th>--%>
+                                                <th>Action
+                                                </th>
+                                            </thead>
+                                </HeaderTemplate>
                                 <ItemTemplate>
 
 
                                     <tbody>
                                         <tr>
-                                            <td> <%# Container.ItemIndex + 1 %>
+                                            <td><%# Container.ItemIndex + 1 %>
                                             </td>
-                                            <td><%# Eval("judul_buku") %>
+                                            <td><asp:LinkButton runat="server" ID="Modal" OnClick="Modal_Click"  class="btn btn-warning" CommandArgument='<%# Eval("id_buku") %>' data-toggle="modal" data-target="#exampleModal">
+                                                <%# Eval("judul_buku") %>
+                                            </asp:LinkButton>
                                             </td>
                                             <td>
-                                                <img src="../Assets/Img/<%# Eval("gambar") %>" height="180" width="140"  />
+                                                <img src="../Assets/Img/<%# Eval("gambar") %>" height="180" width="140" />
                                             </td>
                                             <td><%# Eval("kategori") %>
                                             </td>
@@ -84,19 +120,18 @@
                                             <td><%# Eval("tgl") %>
                                             </td>
                                             <td><%# Eval("nama_pengarang") %>
-                                            </td
-                                             <td>
                                             </td>
-                                         <%--   <td>
+                                            <td></td>
+                                            <%--   <td>
                                             </td>--%>
                                             <td>
-                                                 <asp:LinkButton ID="open" runat="server" CommandArgument='<%# Eval("filebuku") %>' OnClick="open_Click" class="btn btn-success btn-fab btn-fab-mini btn-round">
+                                                <asp:LinkButton ID="open" runat="server" CommandArgument='<%# Eval("filebuku") %>' OnClick="open_Click" class="btn btn-success btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">search</i>
                                                 </asp:LinkButton>
                                                 <asp:LinkButton ID="edit" runat="server" CommandArgument='<%# Eval("id_buku") %>' OnClick="Edit_Click" class="btn btn-warning  btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">edit</i>
                                                 </asp:LinkButton>
-                                                <asp:LinkButton ID="delete" runat="server" CommandArgument='<%# Eval("id_buku") %>' onclientclick="return confirm('Are you sure you want to delete?')" CommandName="delete"  class="btn btn-danger btn-fab btn-fab-mini btn-round">
+                                                <asp:LinkButton ID="delete" runat="server" CommandArgument='<%# Eval("id_buku") %>' OnClientClick="return confirm('Are you sure you want to delete?')" CommandName="delete" class="btn btn-danger btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">delete</i>
                                                 </asp:LinkButton>
                                             </td>
@@ -106,13 +141,13 @@
                                 <FooterTemplate>
                                     </table>
                                 </FooterTemplate>
-                            </asp:Repeater>     
-                            </div>
+                            </asp:Repeater>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 </asp:Content>

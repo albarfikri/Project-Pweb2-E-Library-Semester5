@@ -104,7 +104,7 @@
                                                     <i class="material-icons">edit</i>
                                                 </asp:LinkButton>
 
-                                                <asp:LinkButton Visible="false" runat="server" CommandArgument='<%# Eval("id") %>' CommandName="delete" OnClientClick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-fab btn-fab-mini btn-round">
+                                                <asp:LinkButton  runat="server" CommandArgument='<%# Eval("id") %>' CommandName="delete" OnClientClick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">delete</i>
                                                 </asp:LinkButton>
                                             </td>

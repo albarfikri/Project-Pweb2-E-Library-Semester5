@@ -1,4 +1,4 @@
-﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Admin.Master.vb" Inherits="ProjectUas.library" %>
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Member.master.vb" Inherits="ProjectUas.Member" %>
 
 <!DOCTYPE html>
 
@@ -20,10 +20,9 @@
     <link href="https://localhost:44308/Template/TAdmin/assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="https://localhost:44308/Template/TAdmin/assets/demo/demo.css" rel="stylesheet" />
-
 </head>
 <body>
-    <form runat="server" method="post">
+   <form runat="server" method="post">
 
         <div class="wrapper ">
             <div class="sidebar" data-color="purple" data-background-color="white" data-image="https://localhost:44308/Template/TAdmin/assets/img/sidebar-1.jpg">
@@ -38,34 +37,16 @@
                 </div>
                 <div class="sidebar-wrapper">
                     <ul class="nav">
-                        <li id="dashboard" runat="server" class="nav-item  ">
-                            <a class="nav-link" href="https://localhost:44308/Admin/dashboard.aspx">
+                        <li id="dashboardmember" runat="server" class="nav-item  ">
+                            <a class="nav-link" href="https://localhost:44308/Member/dashboardmember.aspx">
                                 <i class="material-icons">dashboard</i>
                                 <p>Dashboard</p>
                             </a>
                         </li>
-                        <li id="staff" runat="server" class="nav-item ">
-                            <a class="nav-link" href="https://localhost:44308/Admin/petugas.aspx">
-                                <i class="material-icons">people</i>
-                                <p>Petugas</p>
-                            </a>
-                        </li>
-                        <li id="buku" runat="server" class="nav-item">
-                            <a class="nav-link" href="https://localhost:44308/Admin/buku.aspx">
+                        <li id="memberbuku" runat="server" class="nav-item">
+                            <a class="nav-link" href="https://localhost:44308/Member/memberbuku.aspx">
                                 <i class="material-icons">content_paste</i>
                                 <p>Koleksi Buku</p>
-                            </a>
-                        </li>
-                        <li id="member" runat="server" class="nav-item ">
-                            <a class="nav-link" href="https://localhost:44308/Admin/member.aspx">
-                                <i class="material-icons">person</i>
-                                <p>Member</p>
-                            </a>
-                        </li>
-                        <li id="comment" runat="server" class="nav-item ">
-                            <a class="nav-link" href="https://localhost:44308/Admin/comment.aspx">
-                                <i class="material-icons">library_books</i>
-                                <p>Comment</p>
                             </a>
                         </li>
                         <%--     <li id="maps" runat="server" class="nav-item ">
@@ -140,8 +121,17 @@
                     </div>
                 </nav>
                 <!-- End Navbar -->
+
+
+
+
                 <asp:ContentPlaceHolder ID="Content" runat="server">
                 </asp:ContentPlaceHolder>
+
+
+
+
+
                 <footer class="footer">
                     <div class="container-fluid">
                         <nav class="float-left">

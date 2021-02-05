@@ -1,12 +1,11 @@
 ﻿Imports System.Data.SqlClient
 
-Public Class buku
+Public Class memberbuku
     Inherits System.Web.UI.Page
     Dim con As New SqlConnection("Data Source=LAPTOP-IF574GLF\ALBARSQL;Initial Catalog=dbUasPweb;Integrated Security=True")
-    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not Me.IsPostBack Then
             Me.BindRepeater()
-            Dim idName As String = Request.QueryString("id_buku")
         End If
     End Sub
 
@@ -22,23 +21,7 @@ Public Class buku
         RepeaterBuku.DataBind()
         con.Close()
     End Sub
-
-    Private Sub Modal()
-        Dim IdName As String = Request.QueryString("id")
-        Dim cmd As New SqlCommand("Select * from buku where id_buku='" & idName & "'", con)
-        If con.State = ConnectionState.Closed Then
-            con.Open()
-        End If
-        Dim ds As New DataSet()
-        Dim adp As New SqlDataAdapter(cmd)
-        adp.Fill(ds)
-        RepeaterModalBuku.DataSource = ds
-        RepeaterModalBuku.DataBind()
-        con.Close()
-    End Sub
-
     Protected Sub Buku_Command(ByVal source As Object, ByVal e As System.Web.UI.WebControls.RepeaterCommandEventArgs) Handles RepeaterBuku.ItemCommand
-
         If e.CommandName = "delete" Then
             If con.State = ConnectionState.Closed Then
                 con.Open()
@@ -68,17 +51,9 @@ Public Class buku
         Dim id As String = btn.CommandArgument
         Response.Redirect(String.Format("~/Admin/bukuedit.aspx?id={0}", id))
     End Sub
-
     Protected Sub open_Click(sender As Object, e As EventArgs)
         Dim btn As LinkButton = CType(sender, LinkButton)
         Dim buku As String = btn.CommandArgument
         Response.Redirect(String.Format("~/Assets/pdf/{0}", buku))
     End Sub
-
-    Protected Sub Modal_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Dim btn As LinkButton = CType(sender, LinkButton)
-        Dim id As String = btn.CommandArgument
-        Response.Redirect(String.Format("~/Assets/buku.aspx?id={0}", id))
-    End Sub
-
 End Class

@@ -18,7 +18,7 @@ Public Class contact
         conn.Open()
         cmd.ExecuteNonQuery()
         conn.Close()
-        MsgBox("Inserting data Successfuly ! ", MsgBoxStyle.Information)
+        MsgBox("Message has been sent successfully ! ", MsgBoxStyle.Information)
         Response.Redirect("contact.aspx")
     End Sub
 
