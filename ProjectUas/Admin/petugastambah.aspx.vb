@@ -15,8 +15,8 @@ Public Class petugastambah
 
         Else
             Dim cmd As New SqlCommand
-            cmd.CommandText = "INSERT INTO anggota (nama,nik,alamat,ttl,jenis_kelamin,email,no_hp,username,password,kategori,gambar) values 
-                            ('" & nama.Text & "','" & nik.Text & "','" & alamat.Text & "','" & ttl.Text & "','" & jenis_kelamin.Text & "','" & email.Text & "','" & no_hp.Text & "','" & username.Text & "','" & password.Text & "','admin','" & gambar.Text & "')"
+            cmd.CommandText = "INSERT INTO anggota (nama,nik,alamat,ttl,jenis_kelamin,email,no_hp,username,password,kategori,gambar,status) values 
+                            ('" & nama.Text & "','" & nik.Text & "','" & alamat.Text & "','" & ttl.Text & "','" & jenis_kelamin.Text & "','" & email.Text & "','" & no_hp.Text & "','" & username.Text & "','" & password.Text & "','admin','" & gambar.Text & "','Active')"
             cmd.Connection = conn
             conn.Open()
             cmd.ExecuteNonQuery()

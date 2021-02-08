@@ -39,34 +39,41 @@
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead class=" text-primary">
-                                                <th>No
+                                                <th>
+                                                    No
                                                 </th>
-                                                <th>Nama
+                                                <th>
+                                                    Nama
                                                 </th>
-                                                <th>Gambar
+                                                <th>
+                                                    Gambar
                                                 </th>
-                                                <th>Nik
+                                                <th>
+                                                    Nik
                                                 </th>
-                                                <th>Alamat
+                                                <th>
+                                                    Alamat
                                                 </th>
-                                                <th>Ttl
+                                                <th>
+                                                    Ttl
                                                 </th>
-                                                <th>Jenis Kelamin
+                                                <th>
+                                                    Jenis Kelamin
                                                 </th>
-                                                <th>Email
+                                                <th>
+                                                    Email
                                                 </th>
-                                                <th>Telp
-                                                </th>
-                                                <th>Kategori
-                                                </th>
-                                                <th>Action
+                                                <th>
+                                                    Telp
                                                 </th>
 
+                                                <th>
+                                                    Status
+                                                </th>
                                             </thead>
                                 </HeaderTemplate>
                                 <ItemTemplate>
                                     <tbody>
-
                                         <tr>
                                             <td>
                                                 <%# Container.ItemIndex + 1 %>
@@ -94,35 +101,34 @@
                                                 <%# Eval("email") %>
                                             </td>
                                             <td>
-                                                <%# Eval("nama") %>
-                                            </td>
-                                            <td>
                                                 <%# Eval("no_hp") %>
+                                               
                                             </td>
                                             <td>
-                                            <%--    <asp:LinkButton ID="edit" runat="server" class="btn btn-warning btn-fab btn-fab-mini btn-round">
+                                                <asp:LinkButton runat="server" ID="Modal" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                                                <%# Eval("status") %>
+                                                </asp:LinkButton>
+                                            </td>
+                                       <%--     <td>
+                                                <%--    <asp:LinkButton ID="edit" runat="server" class="btn btn-warning btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">edit</i>
                                                 </asp:LinkButton>--%>
 
-                                                <asp:LinkButton  runat="server" CommandArgument='<%# Eval("id") %>' CommandName="delete" OnClientClick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-fab btn-fab-mini btn-round">
+                                                <%--<asp:LinkButton  runat="server" CommandArgument='<%# Eval("id") %>' CommandName="delete" OnClientClick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">delete</i>
-                                                </asp:LinkButton>
-                                            </td>
+                                                </asp:LinkButton>--%>
+                                            </td>--%>
                                         </tr>
-
                                     </tbody>
                                 </ItemTemplate>
                                 <FooterTemplate>
                                     </table>
                                 </FooterTemplate>
                             </asp:Repeater>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
 </asp:Content>

@@ -94,7 +94,7 @@
                                                 </th>
                                                 <th>Nama Pengarang
                                                 </th>
-                                                <%--  <th>Sinopsis</th>--%>
+                
                                                 <th>Action
                                                 </th>
                                             </thead>
@@ -121,9 +121,7 @@
                                             </td>
                                             <td><%# Eval("nama_pengarang") %>
                                             </td>
-                                            <td></td>
-                                            <%--   <td>
-                                            </td>--%>
+                                         
                                             <td>
                                                 <asp:LinkButton ID="open" runat="server" CommandArgument='<%# Eval("filebuku") %>' OnClick="open_Click" class="btn btn-success btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">search</i>

@@ -54,7 +54,7 @@
                                                 </th>
                                                 <th>Telp
                                                 </th>
-                                                <th>Kategori
+                                                <th>Status
                                                 </th>
                                                 <th>Action
                                                 </th>
@@ -92,10 +92,12 @@
                                                 <%# Eval("email") %>
                                             </td>
                                             <td>
-                                                <%# Eval("nama") %>
+                                                <%# Eval("no_hp") %>
                                             </td>
                                             <td>
-                                                <%# Eval("no_hp") %>
+                                                 <asp:LinkButton runat="server" ID="Modal" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                                                <%# Eval("status") %>
+                                            </asp:LinkButton>
                                             </td>
                                             <td>
                                                 <asp:LinkButton ID="edit" runat="server" CommandArgument='<%# Eval("id") %>' class="btn btn-warning btn-fab btn-fab-mini btn-round" OnClick="Edit_Click">
