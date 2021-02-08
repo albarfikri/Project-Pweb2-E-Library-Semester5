@@ -12,4 +12,13 @@ Option Explicit On
 
 
 Partial Public Class dashboardmember
+
+    '''<summary>
+    '''RepeaterEditMember control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RepeaterEditMember As Global.System.Web.UI.WebControls.Repeater
 End Class

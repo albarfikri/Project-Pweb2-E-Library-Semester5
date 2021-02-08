@@ -154,6 +154,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:ProjectUas.memberedit._RepeaterEditBuku">
+<summary>
+RepeaterEditBuku control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:ProjectUas.membertambah._nama">
 <summary>
 nama control.
@@ -751,6 +760,15 @@ To modify move field declaration from designer file to code-behind file.
 <member name="F:ProjectUas.Member._Content">
 <summary>
 Content control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:ProjectUas.dashboardmember._RepeaterEditMember">
+<summary>
+RepeaterEditMember control.
 </summary>
 <remarks>
 Auto-generated field.

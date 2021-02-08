@@ -100,9 +100,9 @@
                                                 <%# Eval("no_hp") %>
                                             </td>
                                             <td>
-                                                <asp:LinkButton ID="edit" runat="server" class="btn btn-warning btn-fab btn-fab-mini btn-round">
+                                            <%--    <asp:LinkButton ID="edit" runat="server" class="btn btn-warning btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">edit</i>
-                                                </asp:LinkButton>
+                                                </asp:LinkButton>--%>
 
                                                 <asp:LinkButton  runat="server" CommandArgument='<%# Eval("id") %>' CommandName="delete" OnClientClick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-fab btn-fab-mini btn-round">
                                                     <i class="material-icons">delete</i>

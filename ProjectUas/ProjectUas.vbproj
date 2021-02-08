@@ -100,7 +100,7 @@
     <Content Include="Admin\bukutambah.aspx" />
     <Content Include="Admin\comment.aspx" />
     <Content Include="Admin\dashboard.aspx" />
-    <Content Include="Admin\memberedit.aspx" />
+    <Content Include="Member\memberedit.aspx" />
     <Content Include="Admin\membertambah.aspx" />
     <Content Include="Admin\petugasedit.aspx" />
     <Content Include="Admin\petugastambah.aspx" />
@@ -130,7 +130,6 @@
     <Content Include="Dashboard\index.aspx" />
     <Content Include="Dashboard\registrasi.aspx" />
     <Content Include="Member\dashboardmember.aspx" />
-    <Content Include="Member\datadiri.aspx" />
     <Content Include="Member\memberbuku.aspx" />
     <Content Include="Scripts\bootstrap-material-design.min.js" />
     <Content Include="Scripts\jquery.min.js" />
@@ -480,10 +479,10 @@
       <DependentUpon>dashboard.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Admin\memberedit.aspx.designer.vb">
+    <Compile Include="Member\memberedit.aspx.designer.vb">
       <DependentUpon>memberedit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\memberedit.aspx.vb">
+    <Compile Include="Member\memberedit.aspx.vb">
       <DependentUpon>memberedit.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
@@ -590,13 +589,6 @@
     </Compile>
     <Compile Include="Member\dashboardmember.aspx.vb">
       <DependentUpon>dashboardmember.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Member\datadiri.aspx.designer.vb">
-      <DependentUpon>datadiri.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Member\datadiri.aspx.vb">
-      <DependentUpon>datadiri.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Member\memberbuku.aspx.designer.vb">

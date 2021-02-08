@@ -34,15 +34,9 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </ItemTemplate>
                 </asp:Repeater>
-
             </div>
-
         </div>
     </div>
-
-
 </asp:Content>

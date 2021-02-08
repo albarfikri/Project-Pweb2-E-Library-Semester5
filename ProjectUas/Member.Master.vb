@@ -7,6 +7,8 @@
             dashboardmember.Attributes.Add("class", "nav-item active")
         ElseIf (activepage.Contains("Member/memberbuku.aspx")) Then
             memberbuku.Attributes.Add("class", "nav-item active")
+        ElseIf (activepage.Contains("Member/memberedit.aspx")) Then
+            memberbuku.Attributes.Add("class", "nav-item active")
         Else
 
         End If
